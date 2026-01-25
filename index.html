@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markjason — .md and .json, nothing else</title>
+    <meta name="description" content="A stupidly fast macOS app for markdown and JSON files. For people who work with AI and don't want to open an IDE just to read a file.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📝</text></svg>">
+</head>
+<body>
+    <div class="grain"></div>
+    
+    <header class="header">
+        <nav class="nav">
+            <a href="#features" class="nav-link">Features</a>
+            <a href="#why" class="nav-link">Why tho?</a>
+            <a href="#download" class="nav-link nav-link--cta">Download</a>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <div class="logo" aria-label="markjason logo">
+                    <span class="logo-mark">#</span><span class="logo-brace">{</span><span class="logo-brace">}</span>
+                </div>
+                <h1 class="hero-title">markjason</h1>
+                <p class="hero-tagline">
+                    <span class="file-ext">.md</span> and <span class="file-ext">.json</span>, nothing else.
+                </p>
+                <p class="hero-description">
+                    A stupidly fast macOS app for people who work with AI<br>
+                    and don't want to open an IDE just to read a damn file.
+                </p>
+                <div class="hero-actions">
+                    <a href="#download" class="btn btn-primary">
+                        <span class="btn-icon">↓</span>
+                        Download for macOS
+                    </a>
+                    <span class="version">v1.0 · Apple Silicon & Intel</span>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="app-window">
+                    <div class="window-chrome">
+                        <span class="window-dot window-dot--close"></span>
+                        <span class="window-dot window-dot--minimize"></span>
+                        <span class="window-dot window-dot--maximize"></span>
+                    </div>
+                    <div class="window-content">
+                        <div class="sidebar">
+                            <div class="file-item file-item--md">README.md</div>
+                            <div class="file-item file-item--json">config.json</div>
+                            <div class="file-item file-item--md file-item--active">notes.md</div>
+                            <div class="file-item">src/</div>
+                            <div class="file-item file-item--json">package.json</div>
+                        </div>
+                        <div class="editor">
+                            <div class="editor-line"><span class="syntax-heading"># Meeting Notes</span></div>
+                            <div class="editor-line"></div>
+                            <div class="editor-line">Discussed the new <span class="syntax-bold">**API changes**</span></div>
+                            <div class="editor-line">with the team. Key points:</div>
+                            <div class="editor-line"></div>
+                            <div class="editor-line"><span class="syntax-list">-</span> Ship by Friday</div>
+                            <div class="editor-line"><span class="syntax-list">-</span> No more purple</div>
+                            <div class="editor-line"><span class="syntax-list">-</span> Keep it <span class="syntax-code">`simple`</span></div>
+                            <div class="editor-line"></div>
+                            <div class="editor-line"><span class="syntax-blockquote">> "It's not about how it looks,</span></div>
+                            <div class="editor-line"><span class="syntax-blockquote">> it's about how it works"</span></div>
+                            <div class="cursor"></div>
+                        </div>
+                    </div>
+                    <div class="window-footer">
+                        <span class="status-saved">✓ Saved</span>
+                        <span class="status-mode">Formatted</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features">
+            <h2 class="section-title">What it does</h2>
+            <p class="section-subtitle">(and nothing more)</p>
+            
+            <div class="features-grid">
+                <div class="feature">
+                    <div class="feature-icon">⚡</div>
+                    <h3 class="feature-title">Instant Open</h3>
+                    <p class="feature-desc">
+                        Click. Open. Done.<br>
+                        No project loading. No extensions initializing. No "workspace trust" dialogs.
+                    </p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🎨</div>
+                    <h3 class="feature-title">Syntax Highlighting</h3>
+                    <p class="feature-desc">
+                        Beautiful colors that make sense. Headers pop. Code blocks stand out. JSON keys glow.
+                    </p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">👁️</div>
+                    <h3 class="feature-title">Dual Modes</h3>
+                    <p class="feature-desc">
+                        <strong>Markdown:</strong> Raw or formatted. Switch instantly.<br>
+                        <strong>JSON:</strong> Real-time validation. Know immediately if it's broken.
+                    </p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">🌙</div>
+                    <h3 class="feature-title">Dark Mode Forever</h3>
+                    <p class="feature-desc">
+                        No light mode. No toggle. No "follow system."<br>
+                        Just darkness, as nature intended.
+                    </p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">💾</div>
+                    <h3 class="feature-title">Auto-Save</h3>
+                    <p class="feature-desc">
+                        Changes save automatically. Clear indicator shows when. Undo/redo when you mess up.
+                    </p>
+                </div>
+                
+                <div class="feature">
+                    <div class="feature-icon">📁</div>
+                    <h3 class="feature-title">Drag & Drop</h3>
+                    <p class="feature-desc">
+                        Drag a file in. It opens. Revolutionary, we know.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Section -->
+        <section id="why" class="why">
+            <h2 class="section-title">Why not just use VS Code?</h2>
+            
+            <div class="comparison">
+                <div class="comparison-col comparison-col--vscode">
+                    <h3 class="comparison-title">VS Code</h3>
+                    <ul class="comparison-list">
+                        <li>Open app</li>
+                        <li>Wait for extensions</li>
+                        <li>"Do you trust the authors?"</li>
+                        <li>Open folder</li>
+                        <li>Navigate to file</li>
+                        <li>Wait for language server</li>
+                        <li>Read your file</li>
+                        <li>Close 47 tabs you didn't need</li>
+                        <li>Wonder why you used 2GB of RAM</li>
+                    </ul>
+                    <div class="comparison-time">~8 seconds + your sanity</div>
+                </div>
+                
+                <div class="comparison-vs">vs</div>
+                
+                <div class="comparison-col comparison-col--markjason">
+                    <h3 class="comparison-title">markjason</h3>
+                    <ul class="comparison-list">
+                        <li>Double-click file</li>
+                        <li>Read your file</li>
+                    </ul>
+                    <div class="comparison-time">~0.3 seconds</div>
+                </div>
+            </div>
+            
+            <p class="why-footer">
+                Look, VS Code is amazing. Use it for coding.<br>
+                But for reading that <span class="file-ext">prompt.md</span> Claude just saved? Come on.
+            </p>
+        </section>
+
+        <!-- Download Section -->
+        <section id="download" class="download">
+            <h2 class="section-title">Get it</h2>
+            <p class="download-subtitle">Free. No account. No tracking. Just an app.</p>
+            
+            <div class="download-box">
+                <a href="#" class="btn btn-primary btn-large" id="download-btn">
+                    <span class="btn-icon">↓</span>
+                    Download markjason.dmg
+                </a>
+                <p class="download-meta">
+                    macOS 12+ · Universal Binary · ~8MB
+                </p>
+                <p class="download-note">
+                    (Coming soon. Building as fast as we can.)
+                </p>
+            </div>
+            
+            <div class="setup-hint">
+                <p><strong>Pro tip:</strong> After installing, right-click any <span class="file-ext">.md</span> or <span class="file-ext">.json</span> file → Get Info → Open with → markjason → Change All.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-mark">#</span><span class="logo-brace">{</span><span class="logo-brace">}</span>
+                <span class="footer-name">markjason</span>
+            </div>
+            <p class="footer-tagline">Made for people who read too many AI outputs.</p>
+            <p class="footer-copy">No cookies. No analytics. We literally don't know you're here.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
