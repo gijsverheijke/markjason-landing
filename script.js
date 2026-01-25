@@ -4,17 +4,17 @@
 (function() {
     'use strict';
 
-    // Smooth reveal on scroll
+    // Smooth reveal on scroll using Intersection Observer
     const observerOptions = {
         root: null,
-        rootMargin: '0px',
+        rootMargin: '0px 0px -50px 0px',
         threshold: 0.1
     };
 
     const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.style.animationPlayState = 'running';
+                entry.target.classList.add('animate-in');
                 observer.unobserve(entry.target);
             }
         });
@@ -22,7 +22,6 @@
 
     // Observe animated elements
     document.querySelectorAll('.feature, .comparison-col, .download-box').forEach(el => {
-        el.style.animationPlayState = 'paused';
         observer.observe(el);
     });
 

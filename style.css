@@ -728,19 +728,27 @@ body {
 .feature,
 .comparison-col,
 .download-box {
-    opacity: 0;
-    transform: translateY(20px);
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Animation class added by JS when element comes into view */
+.animate-in {
     animation: fadeInUp 0.6s var(--ease-out) forwards;
 }
 
-.feature:nth-child(1) { animation-delay: 0.1s; }
-.feature:nth-child(2) { animation-delay: 0.2s; }
-.feature:nth-child(3) { animation-delay: 0.3s; }
-.feature:nth-child(4) { animation-delay: 0.4s; }
-.feature:nth-child(5) { animation-delay: 0.5s; }
-.feature:nth-child(6) { animation-delay: 0.6s; }
+.feature.animate-in:nth-child(1) { animation-delay: 0.1s; }
+.feature.animate-in:nth-child(2) { animation-delay: 0.2s; }
+.feature.animate-in:nth-child(3) { animation-delay: 0.3s; }
+.feature.animate-in:nth-child(4) { animation-delay: 0.4s; }
+.feature.animate-in:nth-child(5) { animation-delay: 0.5s; }
+.feature.animate-in:nth-child(6) { animation-delay: 0.6s; }
 
 @keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
     to {
         opacity: 1;
         transform: translateY(0);
