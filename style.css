@@ -814,3 +814,232 @@ body {
 ::-webkit-scrollbar-thumb:hover {
     background: var(--text-muted);
 }
+
+/* ============================================
+   "What we'll NEVER add" section
+   ============================================ */
+
+.never {
+    padding: var(--space-2xl) var(--space-lg);
+    text-align: center;
+}
+
+.strike {
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+
+.never-terminal {
+    max-width: 600px;
+    margin: var(--space-xl) auto;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    text-align: left;
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+}
+
+.terminal-header {
+    background: var(--bg-elevated);
+    padding: var(--space-sm) var(--space-md);
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    border-bottom: 1px solid var(--border);
+}
+
+.terminal-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: var(--text-muted);
+}
+
+.terminal-dot:nth-child(1) { background: #ff5f57; }
+.terminal-dot:nth-child(2) { background: #febc2e; }
+.terminal-dot:nth-child(3) { background: #28c840; }
+
+.terminal-title {
+    margin-left: auto;
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.terminal-body {
+    padding: var(--space-md);
+}
+
+.terminal-line {
+    line-height: 1.8;
+    display: flex;
+    gap: var(--space-sm);
+}
+
+.terminal-prompt {
+    color: var(--accent-md);
+    user-select: none;
+}
+
+.terminal-output {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.never-item {
+    color: var(--text-primary);
+}
+
+.never-comment {
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.terminal-cursor {
+    animation: blink 1s infinite;
+    color: var(--accent-md);
+}
+
+@keyframes blink {
+    0%, 50% { opacity: 1; }
+    51%, 100% { opacity: 0; }
+}
+
+.never-footer {
+    color: var(--text-secondary);
+    font-style: italic;
+    margin-top: var(--space-xl);
+}
+
+.never-attribution {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+}
+
+/* ============================================
+   Glitch effect on logo
+   ============================================ */
+
+.logo {
+    position: relative;
+}
+
+.logo:hover {
+    animation: glitch 0.3s ease forwards;
+}
+
+.logo:hover .logo-mark,
+.logo:hover .logo-brace {
+    animation: colorGlitch 0.3s ease;
+}
+
+@keyframes glitch {
+    0% { transform: translate(0); }
+    20% { transform: translate(-2px, 2px); }
+    40% { transform: translate(-2px, -2px); }
+    60% { transform: translate(2px, 2px); }
+    80% { transform: translate(2px, -2px); }
+    100% { transform: translate(0); }
+}
+
+@keyframes colorGlitch {
+    0% { text-shadow: none; }
+    20% { text-shadow: -2px 0 var(--accent-json), 2px 0 var(--accent-md); }
+    40% { text-shadow: 2px 0 var(--accent-json), -2px 0 var(--accent-md); }
+    60% { text-shadow: -1px 0 var(--accent-md), 1px 0 var(--accent-json); }
+    80% { text-shadow: 1px 0 var(--accent-md), -1px 0 var(--accent-json); }
+    100% { text-shadow: none; }
+}
+
+/* Responsive for never section */
+@media (max-width: 768px) {
+    .never-terminal {
+        font-size: 0.75rem;
+    }
+    
+    .terminal-output {
+        flex-direction: column;
+        gap: 0;
+    }
+    
+    .never-comment {
+        margin-left: 1.5rem;
+        font-size: 0.7rem;
+    }
+}
+
+/* ============================================
+   VS Code comparison strike-through effect
+   ============================================ */
+
+.comparison-col--vscode li {
+    position: relative;
+    transition: opacity 0.4s ease, color 0.4s ease;
+}
+
+.comparison-col--vscode li.crossed-out {
+    color: var(--text-muted);
+}
+
+.comparison-col--vscode li.crossed-out::after {
+    content: '';
+    position: absolute;
+    left: -10px;
+    top: 50%;
+    width: 0;
+    height: 2px;
+    background: linear-gradient(90deg, #ef4444, transparent);
+    animation: strikethrough 0.4s ease forwards;
+}
+
+@keyframes strikethrough {
+    to {
+        width: calc(100% + 20px);
+    }
+}
+
+/* Make the "vs" more dramatic */
+.comparison-vs {
+    font-size: 2rem !important;
+    font-weight: 700;
+    background: linear-gradient(135deg, #ef4444, #f59e0b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); opacity: 0.8; }
+    50% { transform: scale(1.1); opacity: 1; }
+}
+
+/* Hero enhancements */
+.hero-title {
+    background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+/* Feature cards hover enhancement */
+.feature {
+    transition: transform 0.3s var(--ease-out), box-shadow 0.3s var(--ease-out), border-color 0.3s ease;
+}
+
+.feature:hover {
+    transform: translateY(-4px);
+    border-color: var(--accent-md);
+    box-shadow: 0 20px 40px -20px rgba(34, 197, 94, 0.2);
+}
+
+/* Logo glow on hover */
+.logo:hover .logo-mark {
+    text-shadow: 0 0 20px var(--accent-md), 0 0 40px var(--accent-md);
+}
+
+.logo:hover .logo-brace {
+    text-shadow: 0 0 20px var(--accent-json), 0 0 40px var(--accent-json);
+}
