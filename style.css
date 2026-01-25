@@ -1091,3 +1091,31 @@ body {
 .credits-note::before {
     content: '— ';
 }
+
+/* Download button attention animation */
+.btn-large {
+    animation: gentleShake 4s ease-in-out infinite;
+    animation-delay: 2s;
+}
+
+.btn-large:hover {
+    animation: none;
+    transform: scale(1.02);
+}
+
+@keyframes gentleShake {
+    0%, 90%, 100% { transform: translateX(0); }
+    92% { transform: translateX(-3px) rotate(-0.5deg); }
+    94% { transform: translateX(3px) rotate(0.5deg); }
+    96% { transform: translateX(-2px) rotate(-0.3deg); }
+    98% { transform: translateX(2px) rotate(0.3deg); }
+}
+
+/* Make version badge more visible */
+.version {
+    background: var(--bg-elevated);
+    padding: 0.25rem 0.75rem;
+    border-radius: 20px;
+    font-size: 0.75rem;
+    border: 1px solid var(--border-subtle);
+}
