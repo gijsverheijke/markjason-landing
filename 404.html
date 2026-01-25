@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>404 — File not found (ironic, we know)</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <style>
+        :root {
+            --bg-primary: #0a0a0b;
+            --text-primary: #fafafa;
+            --text-secondary: #a1a1aa;
+            --text-muted: #71717a;
+            --accent-md: #22c55e;
+            --accent-json: #f59e0b;
+            --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            --font-mono: 'JetBrains Mono', 'SF Mono', monospace;
+        }
+        
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        
+        body {
+            font-family: var(--font-sans);
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            padding: 2rem;
+        }
+        
+        .ascii-art {
+            font-family: var(--font-mono);
+            font-size: clamp(0.5rem, 2vw, 0.9rem);
+            line-height: 1.2;
+            color: var(--accent-md);
+            margin-bottom: 2rem;
+            white-space: pre;
+            opacity: 0.8;
+        }
+        
+        h1 {
+            font-family: var(--font-mono);
+            font-size: 4rem;
+            font-weight: 600;
+            margin-bottom: 1rem;
+            background: linear-gradient(135deg, var(--accent-md), var(--accent-json));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+        
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .joke {
+            color: var(--text-muted);
+            font-style: italic;
+            margin-bottom: 2rem;
+        }
+        
+        .error-json {
+            font-family: var(--font-mono);
+            font-size: 0.85rem;
+            background: #111113;
+            border: 1px solid #27272a;
+            border-radius: 8px;
+            padding: 1.5rem;
+            text-align: left;
+            max-width: 400px;
+            margin-bottom: 2rem;
+        }
+        
+        .json-key { color: var(--accent-json); }
+        .json-string { color: var(--accent-md); }
+        .json-number { color: #60a5fa; }
+        .json-bool { color: #f472b6; }
+        
+        .home-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            background: var(--text-primary);
+            color: var(--bg-primary);
+            text-decoration: none;
+            font-weight: 600;
+            border-radius: 8px;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        
+        .home-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 30px -10px rgba(255, 255, 255, 0.2);
+        }
+        
+        .footer-note {
+            margin-top: 3rem;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+    <div class="ascii-art">
+    ╔═══════════════════════════════════════╗
+    ║                                       ║
+    ║   ¯\_(ツ)_/¯                          ║
+    ║                                       ║
+    ║   The file you're looking for         ║
+    ║   doesn't exist.                      ║
+    ║                                       ║
+    ║   Ironically, we're a file reader.    ║
+    ║                                       ║
+    ╚═══════════════════════════════════════╝
+    </div>
+    
+    <h1>404</h1>
+    <p class="subtitle">File not found</p>
+    <p class="joke">(We see the irony. A file reader that can't find files.)</p>
+    
+    <div class="error-json">
+        <span class="json-key">"error"</span>: {<br>
+        &nbsp;&nbsp;<span class="json-key">"code"</span>: <span class="json-number">404</span>,<br>
+        &nbsp;&nbsp;<span class="json-key">"message"</span>: <span class="json-string">"Not found"</span>,<br>
+        &nbsp;&nbsp;<span class="json-key">"suggestion"</span>: <span class="json-string">"Try the homepage?"</span>,<br>
+        &nbsp;&nbsp;<span class="json-key">"valid_json"</span>: <span class="json-bool">true</span><br>
+        }
+    </div>
+    
+    <a href="/" class="home-link">
+        ← Back to markjason
+    </a>
+    
+    <p class="footer-note">
+        At least this 404 page loaded fast, right?
+    </p>
+</body>
+</html>

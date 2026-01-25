@@ -1043,3 +1043,51 @@ body {
 .logo:hover .logo-brace {
     text-shadow: 0 0 20px var(--accent-json), 0 0 40px var(--accent-json);
 }
+
+/* Typed files animation */
+.typed-files {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    color: var(--text-muted);
+    display: inline-block;
+}
+
+/* Credits section */
+.credits {
+    margin: var(--space-lg) 0;
+    padding: var(--space-md);
+    background: var(--bg-secondary);
+    border-radius: 8px;
+    border: 1px solid var(--border-subtle);
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.credits-title {
+    font-size: 0.8rem;
+    color: var(--text-muted);
+    margin-bottom: var(--space-sm);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.credits-list {
+    list-style: none;
+    font-size: 0.85rem;
+}
+
+.credits-list li {
+    padding: var(--space-xs) 0;
+    color: var(--text-secondary);
+}
+
+.credits-note {
+    color: var(--text-muted);
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.credits-note::before {
+    content: '— ';
+}
