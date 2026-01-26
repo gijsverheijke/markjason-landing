@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>markjason — .md and .json, nothing else</title>
-    <meta name="description" content="A stupidly fast macOS app for markdown and JSON files. For people who work with AI and don't want to open an IDE just to read a file.">
+    <meta name="description" content="A lightning fast editor for .md and .json. For dedicated vibecoders who don't want to open an IDE just to read a file.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     
     <!-- Open Graph -->
     <meta property="og:title" content="markjason — .md and .json, nothing else">
-    <meta property="og:description" content="A stupidly fast macOS app for markdown and JSON files. For people who work with AI.">
+    <meta property="og:description" content="A lightning fast editor for .md and .json. For dedicated vibecoders.">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
 </head>
@@ -41,9 +41,7 @@
                     <span class="file-ext">.md</span> and <span class="file-ext">.json</span>, nothing else.
                 </p>
                 <p class="hero-description">
-                    For people who work with AI and accumulate<br>
-                    <span class="typed-files">README.md, notes.md, prompt.md, config.json, response.json, MEMORY.md...</span><br>
-                    and don't want to open an IDE just to read a damn file.
+                    a lightning fast editor for the only formats dedicated <span class="hero-emphasis">vibecoders</span> still read
                 </p>
                 <div class="hero-actions">
                     <a href="#download" class="btn btn-primary">
@@ -120,7 +118,7 @@
                     <h3 class="feature-title">Dual Modes</h3>
                     <p class="feature-desc">
                         <strong>Markdown:</strong> Raw or formatted. Switch instantly.<br>
-                        <strong>JSON:</strong> Real-time validation. Know immediately if it's broken.
+                        <strong>JSON:</strong> Collapsible tree view for reading. Real-time validation. Click errors to jump to the problem.
                     </p>
                 </div>
                 
@@ -142,10 +140,11 @@
                 </div>
                 
                 <div class="feature">
-                    <div class="feature-icon">📁</div>
-                    <h3 class="feature-title">Drag & Drop</h3>
+                    <div class="feature-icon">📋</div>
+                    <h3 class="feature-title">Quick Paste</h3>
                     <p class="feature-desc">
-                        Drag a file in. It opens. Revolutionary, we know.
+                        <kbd>Cmd+Shift+N</kbd> — Paste from clipboard, auto-detect format, instant preview.<br>
+                        Copy Claude output. Paste. Done.
                     </p>
                 </div>
             </div>
@@ -192,47 +191,36 @@
 
         <!-- What We'll Never Add Section -->
         <section id="never" class="never">
-            <h2 class="section-title">What we'll <span class="strike">never</span> NEVER add</h2>
+            <h2 class="section-title">What we'll never add</h2>
             <p class="section-subtitle">(a legally binding promise)</p>
-            
-            <div class="never-terminal">
-                <div class="terminal-header">
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-dot"></span>
-                    <span class="terminal-title">roadmap.txt</span>
+
+            <div class="markdown-preview">
+                <div class="markdown-header">
+                    <span class="markdown-dot markdown-dot--close"></span>
+                    <span class="markdown-dot markdown-dot--minimize"></span>
+                    <span class="markdown-dot markdown-dot--maximize"></span>
+                    <span class="markdown-filename">NEVER.md</span>
                 </div>
-                <div class="terminal-body">
-                    <div class="terminal-line"><span class="terminal-prompt">$</span> cat things-we-wont-build.txt</div>
-                    <div class="terminal-line terminal-output">
-                        <span class="never-item">❌ Git integration</span>
-                        <span class="never-comment"># that's what git is for</span>
-                    </div>
-                    <div class="terminal-line terminal-output">
-                        <span class="never-item">❌ AI autocomplete</span>
-                        <span class="never-comment"># you have enough AI already</span>
-                    </div>
-                    <div class="terminal-line terminal-output">
-                        <span class="never-item">❌ Cloud sync</span>
-                        <span class="never-comment"># it's YOUR computer</span>
-                    </div>
-                    <div class="terminal-line terminal-output">
-                        <span class="never-item">❌ Plugins</span>
-                        <span class="never-comment"># that's how you become VS Code</span>
-                    </div>
-                    <div class="terminal-line terminal-output">
-                        <span class="never-item">❌ Accounts/login</span>
-                        <span class="never-comment"># absolutely not</span>
-                    </div>
-                    <div class="terminal-line terminal-output">
-                        <span class="never-item">❌ "Share to Twitter"</span>
-                        <span class="never-comment"># it's a text editor jfc</span>
-                    </div>
-                    <div class="terminal-line terminal-output">
-                        <span class="never-item">❌ Light mode</span>
-                        <span class="never-comment"># seek help</span>
-                    </div>
-                    <div class="terminal-line"><span class="terminal-prompt">$</span> <span class="terminal-cursor">█</span></div>
+                <div class="markdown-body">
+                    <div class="md-line"><span class="md-heading"># Things We'll Never Build</span></div>
+                    <div class="md-line"></div>
+                    <div class="md-line"><span class="md-bold">## Git integration</span></div>
+                    <div class="md-line"><span class="md-text">That's what git is for.</span></div>
+                    <div class="md-line"></div>
+                    <div class="md-line"><span class="md-bold">## AI autocomplete</span></div>
+                    <div class="md-line"><span class="md-text">You have enough AI already.</span></div>
+                    <div class="md-line"></div>
+                    <div class="md-line"><span class="md-bold">## Cloud sync</span></div>
+                    <div class="md-line"><span class="md-text">It's YOUR computer.</span></div>
+                    <div class="md-line"></div>
+                    <div class="md-line"><span class="md-bold">## Plugins</span></div>
+                    <div class="md-line"><span class="md-text">That's how you become VS Code.</span></div>
+                    <div class="md-line"></div>
+                    <div class="md-line"><span class="md-bold">## Accounts/login</span></div>
+                    <div class="md-line"><span class="md-text">Absolutely not.</span></div>
+                    <div class="md-line"></div>
+                    <div class="md-line"><span class="md-bold">## Light mode</span></div>
+                    <div class="md-line"><span class="md-text">Seek help.</span></div>
                 </div>
             </div>
             
@@ -240,6 +228,33 @@
                 "The best feature is the one you don't build."<br>
                 <span class="never-attribution">— us, just now, feeling very smart</span>
             </p>
+        </section>
+
+        <!-- Jason Reveal Section -->
+        <section id="jason" class="jason">
+            <h2 class="section-title">Meet Jason</h2>
+            <p class="section-subtitle">(the human behind the code)</p>
+            
+            <div class="jason-card">
+                <div class="jason-image">
+                    <div class="jason-placeholder">
+                        <span class="jason-emoji">👨‍💻</span>
+                    </div>
+                </div>
+                <div class="jason-info">
+                    <h3 class="jason-name">Jason Lee</h3>
+                    <p class="jason-role">Creator, developer, and chief procrastinator</p>
+                    <p class="jason-bio">
+                        Former #1 fan of opening VS Code just to read a JSON file.
+                        Got tired of the hassle, built something better.
+                        Obsessed with dark mode, clean code, and properly formatted markdown.
+                    </p>
+                    <div class="jason-links">
+                        <a href="#" class="jason-link">GitHub ↗</a>
+                        <a href="#" class="jason-link">Twitter ↗</a>
+                    </div>
+                </div>
+            </div>
         </section>
 
         <!-- Download Section -->

@@ -237,6 +237,11 @@ body {
     line-height: 1.7;
 }
 
+.hero-emphasis {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
 .hero-actions {
     display: flex;
     flex-direction: column;
@@ -1118,4 +1123,159 @@ body {
     border-radius: 20px;
     font-size: 0.75rem;
     border: 1px solid var(--border-subtle);
+}
+
+/* ============================================
+   Markdown Preview Section (NEVER.md)
+   ============================================ */
+
+.markdown-preview {
+    max-width: 600px;
+    margin: var(--space-xl) auto;
+    background: var(--bg-secondary);
+    border-radius: 12px;
+    border: 1px solid var(--border);
+    overflow: hidden;
+    text-align: left;
+}
+
+.markdown-header {
+    background: var(--bg-elevated);
+    padding: var(--space-sm) var(--space-md);
+    display: flex;
+    align-items: center;
+    gap: var(--space-xs);
+    border-bottom: 1px solid var(--border);
+}
+
+.markdown-dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+}
+
+.markdown-dot--close { background: #ff5f57; }
+.markdown-dot--minimize { background: #febc2e; }
+.markdown-dot--maximize { background: #28c840; }
+
+.markdown-filename {
+    margin-left: auto;
+    font-family: var(--font-mono);
+    font-size: 0.75rem;
+    color: var(--text-muted);
+}
+
+.markdown-body {
+    padding: var(--space-lg);
+    font-family: var(--font-mono);
+    font-size: 0.9rem;
+    line-height: 1.8;
+}
+
+.md-line {
+    color: var(--text-secondary);
+}
+
+.md-heading {
+    color: var(--syntax-heading);
+    font-weight: 600;
+}
+
+.md-bold {
+    color: var(--syntax-bold);
+    font-weight: 600;
+}
+
+.md-text {
+    color: var(--text-muted);
+}
+
+/* ============================================
+   Jason Reveal Section
+   ============================================ */
+
+.jason {
+    padding: var(--space-2xl) var(--space-lg);
+    text-align: center;
+}
+
+.jason-card {
+    max-width: 500px;
+    margin: var(--space-xl) auto;
+    padding: var(--space-xl);
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 16px;
+}
+
+.jason-image {
+    margin-bottom: var(--space-lg);
+}
+
+.jason-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: var(--bg-elevated);
+    border: 2px solid var(--border);
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.jason-emoji {
+    font-size: 3rem;
+}
+
+.jason-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+}
+
+.jason-role {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+    margin-bottom: var(--space-md);
+}
+
+.jason-bio {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    line-height: 1.7;
+    margin-bottom: var(--space-lg);
+}
+
+.jason-links {
+    display: flex;
+    gap: var(--space-md);
+    justify-content: center;
+}
+
+.jason-link {
+    color: var(--accent-blue);
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.2s ease;
+}
+
+.jason-link:hover {
+    color: var(--text-primary);
+}
+
+/* Responsive for markdown and jason sections */
+@media (max-width: 768px) {
+    .markdown-preview {
+        font-size: 0.8rem;
+    }
+    
+    .markdown-body {
+        padding: var(--space-md);
+    }
+    
+    .jason-card {
+        padding: var(--space-lg);
+    }
 }
