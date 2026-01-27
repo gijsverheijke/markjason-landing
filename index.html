@@ -57,37 +57,50 @@
             
             <div class="hero-visual">
                 <div class="app-window">
-                    <div class="window-chrome">
-                        <span class="window-dot window-dot--close"></span>
-                        <span class="window-dot window-dot--minimize"></span>
-                        <span class="window-dot window-dot--maximize"></span>
-                    </div>
-                    <div class="window-content">
-                        <div class="sidebar">
-                            <div class="file-item file-item--md file-item--active">AGENTS.md</div>
-                            <div class="file-item file-item--json">mcp.json</div>
-                            <div class="file-item file-item--env">.env</div>
-                            <div class="file-item file-item--md">SPECS.md</div>
-                            <div class="file-item file-item--md">BUGS.md</div>
+                    <!-- Title bar -->
+                    <div class="window-titlebar">
+                        <div class="titlebar-left">
+                            <span class="window-dot window-dot--close"></span>
+                            <span class="window-dot window-dot--minimize"></span>
+                            <span class="window-dot window-dot--maximize"></span>
+                            <span class="sidebar-toggle">⊞</span>
                         </div>
+                        <span class="titlebar-title">markjason</span>
+                        <div class="titlebar-right"></div>
+                    </div>
+                    <!-- Tab bar -->
+                    <div class="window-tabbar">
+                        <div class="tab tab--active">
+                            <span class="tab-dot">●</span>
+                            <span class="tab-name">AGENTS.md</span>
+                            <span class="tab-close">×</span>
+                        </div>
+                        <div class="tab-new">+</div>
+                    </div>
+                    <!-- Document bar -->
+                    <div class="window-docbar">
+                        <span class="docbar-filename">AGENTS.md</span>
+                        <div class="docbar-controls">
+                            <span class="mode-toggle"><span class="mode-active">Raw</span><span class="mode-inactive">Read</span></span>
+                            <span class="shortcut-hint">⌘E</span>
+                            <span class="save-check">✓</span>
+                        </div>
+                    </div>
+                    <!-- Editor -->
+                    <div class="window-content">
                         <div class="editor">
-                            <div class="editor-line"><span class="syntax-heading"># AGENTS.MD</span></div>
+                            <div class="editor-line"><span class="syntax-hash">#</span> <span class="syntax-heading">AGENTS.MD</span></div>
                             <div class="editor-line"></div>
                             <div class="editor-line">A stupidly fast native macOS app for</div>
-                            <div class="editor-line"><span class="syntax-code">`.md`</span>, <span class="syntax-code">`.json`</span> and <span class="syntax-code">`.env`</span>. Built with <span class="syntax-bold">**SwiftUI**</span>.</div>
+                            <div class="editor-line"><span class="syntax-code">`.md`</span>, <span class="syntax-code">`.json`</span> and <span class="syntax-code">`.env`</span>. Built with <span class="syntax-marker">**</span><span class="syntax-bold">SwiftUI</span><span class="syntax-marker">**</span>.</div>
                             <div class="editor-line"></div>
-                            <div class="editor-line"><span class="syntax-list">-</span> KISS, DRY, optimize for <span class="syntax-bold">**SPEED**</span></div>
+                            <div class="editor-line"><span class="syntax-list">-</span> KISS, DRY, optimize for <span class="syntax-marker">**</span><span class="syntax-bold">SPEED</span><span class="syntax-marker">**</span></div>
                             <div class="editor-line"><span class="syntax-list">-</span> Don't refactor unrelated code</div>
                             <div class="editor-line"><span class="syntax-list">-</span> Keep changes minimal</div>
                             <div class="editor-line"></div>
                             <div class="editor-line"><span class="syntax-blockquote">> Don't tell me I'm absolutely</span></div>
-                            <div class="editor-line"><span class="syntax-blockquote">> right if you can't prove it.</span></div>
-                            <div class="cursor"></div>
+                            <div class="editor-line"><span class="syntax-blockquote">> right if you can't prove it.</span><span class="cursor"></span></div>
                         </div>
-                    </div>
-                    <div class="window-footer">
-                        <span class="status-saved">✓ Saved</span>
-                        <span class="status-mode">Formatted</span>
                     </div>
                 </div>
             </div>
