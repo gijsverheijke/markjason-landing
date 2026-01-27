@@ -18,8 +18,8 @@
     --accent-json: #f59e0b;    /* Amber for JSON */
     --accent-blue: #3b82f6;    /* Blue for actions */
     
-    --syntax-heading: #fbbf24;
-    --syntax-bold: #f8fafc;
+    --syntax-heading: #60a5fa;
+    --syntax-bold: #e2e8f0;
     --syntax-list: #94a3b8;
     --syntax-code: #fb923c;
     --syntax-blockquote: #64748b;
@@ -176,11 +176,17 @@ body {
 }
 
 /* Logo */
+.hero-brand {
+    display: flex;
+    align-items: center;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-lg);
+}
+
 .logo {
     font-family: var(--font-mono);
-    font-size: 3rem;
+    font-size: clamp(3.5rem, 9vw, 5rem);
     font-weight: 600;
-    margin-bottom: var(--space-md);
     display: flex;
     align-items: center;
     gap: 0.1em;
@@ -196,10 +202,9 @@ body {
 
 .hero-title {
     font-family: var(--font-mono);
-    font-size: clamp(2.5rem, 6vw, 4rem);
+    font-size: clamp(3.5rem, 9vw, 5rem);
     font-weight: 600;
     letter-spacing: -0.02em;
-    margin-bottom: var(--space-md);
     background: linear-gradient(135deg, var(--text-primary) 0%, var(--text-secondary) 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -1132,20 +1137,20 @@ body {
 .markdown-preview {
     max-width: 600px;
     margin: var(--space-xl) auto;
-    background: var(--bg-secondary);
+    background: #141414;
     border-radius: 12px;
-    border: 1px solid var(--border);
+    border: 1px solid #2a2a2a;
     overflow: hidden;
     text-align: left;
 }
 
 .markdown-header {
-    background: var(--bg-elevated);
+    background: #1a1a1a;
     padding: var(--space-sm) var(--space-md);
     display: flex;
     align-items: center;
     gap: var(--space-xs);
-    border-bottom: 1px solid var(--border);
+    border-bottom: 1px solid #2a2a2a;
 }
 
 .markdown-dot {
@@ -1166,28 +1171,43 @@ body {
 }
 
 .markdown-body {
-    padding: var(--space-lg);
+    padding: var(--space-xl) var(--space-lg);
     font-family: var(--font-mono);
-    font-size: 0.9rem;
+    font-size: 0.875rem;
     line-height: 1.8;
 }
 
 .md-line {
     color: var(--text-secondary);
+    min-height: 1.5em;
 }
 
-.md-heading {
-    color: var(--syntax-heading);
+.md-line--h1 {
+    font-size: 1.5rem;
+}
+
+.md-line--h2 {
+    font-size: 1.125rem;
+}
+
+.md-syntax {
+    color: #71717a;
+    font-weight: 400;
+}
+
+.md-h1 {
+    color: #60a5fa;
     font-weight: 600;
 }
 
-.md-bold {
-    color: var(--syntax-bold);
+.md-h2 {
+    color: #60a5fa;
     font-weight: 600;
 }
 
 .md-text {
-    color: var(--text-muted);
+    color: #a1a1aa;
+    font-size: 0.875rem;
 }
 
 /* ============================================

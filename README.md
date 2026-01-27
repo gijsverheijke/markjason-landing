@@ -1,6 +1,6 @@
 # markjason landing page
 
-Landing page for **markjason** — a stupidly fast macOS app for `.md` and `.json` files.
+Landing page for **markjason** — a stupidly fast macOS app for `.md`, `.json` and `.env` files.
 
 ## The App
 
