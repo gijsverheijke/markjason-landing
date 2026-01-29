@@ -1617,3 +1617,17 @@ body {
         gap: var(--space-md);
     }
 }
+
+.features-bottom-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--space-lg);
+    margin-top: var(--space-lg);
+}
+
+@media (max-width: 768px) {
+    .features-bottom-row {
+        grid-template-columns: 1fr;
+        gap: var(--space-md);
+    }
+}
