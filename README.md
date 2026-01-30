@@ -1,54 +1,174 @@
-# markjason landing page
+# markjason
 
-Landing page for **markjason** — a stupidly fast macOS app for `.md`, `.json` and `.env` files.
+<div align="center">
 
-## The App
+<br>
 
-markjason is for people who work with AI and accumulate lots of markdown and JSON files. It's:
+<h3><code>#</code><code>{</code><code>}</code></h3>
 
-- ⚡ **Instant** — opens in ~0.3 seconds
-- 🌙 **Dark mode only** — as nature intended  
-- 🎯 **Focused** — just markdown and JSON, nothing else
-- 💾 **Auto-save** — with clear feedback and undo/redo
-- 📁 **Drag & drop** — because it's not 1995
+**The fastest way to read specs, edit prompts, and manage configs.**
 
-## This Repo
+*Built for the only human tasks left in agentic coding.*
 
-Just HTML, CSS, and vanilla JS. No build tools. No dependencies. No drama.
+<br>
 
-```
-index.html  # The page
-style.css   # Dark mode magic
-script.js   # Minimal interactions
-```
+[Website](https://markjason.sh) · [Download](https://markjason.sh/#download) · [Report Issue](https://github.com/gijsverheijke/markjason-landing/issues)
 
-## Deploy
+<br>
 
-Works out of the box with:
-- GitHub Pages
-- Netlify (just drag the folder)
-- Any static file server
-
-## Local Dev
-
-```bash
-# Python
-python -m http.server 8000
-
-# Node
-npx serve
-
-# Or just open index.html in a browser
-```
-
-## Logo
-
-The logo is `#{}`  — a mashup of:
-- `#` — markdown heading syntax
-- `{}` — JSON object syntax
-
-Simple. Memorable. Typeable.
+</div>
 
 ---
 
-Made for people who read too many AI outputs.
+## What is markjason?
+
+A stupidly fast macOS app for `.md`, `.json`, and `.env` files.
+
+If you work with AI and accumulate lots of markdown specs, JSON configs, and .env files, you know the pain: opening a heavyweight IDE just to read a file, waiting for Electron apps to boot, or fighting with cluttered file browsers.
+
+markjason is the antidote:
+
+- ⚡ **Fast** — Native Swift, no Electron.
+- 🎯 **Focused** — Just markdown, JSON, and .env. Nothing else.
+- 🌙 **Dark mode only** — As nature intended.
+- 💾 **Auto-save** — With clear feedback. Never lose work.
+- 📁 **Lots of carefully crafted details** For the vibes.
+
+---
+
+## Features
+
+### Realtime updates
+- Your agent edits AGENTS.md while you have it open? Boom, it's there in markjason
+- You and your agent are editing at the same time and something drifts? Instant warning
+
+### Uniquely crafted for vibecoding
+- See full filepath and ballpark token count of the file with ⇧⌘I 
+- Insta-copy filename with ⌃⌘C so you can paste it into your terminal
+- Insta-copy markdown as image to share on messaging
+- One-click copy of env keys and values to paste them to your other envs
+- FAST! and low RAM (~1/5th of VS Code i.e. ~100megs)
+
+### For Markdown
+- Read mode toggle (⌘E)
+- Syntax highlighting and font sizes
+- Bold, italic, links, code formatting (⌘B, ⌘I, ⌘L, ⇧⌘C)
+- Copy rendered preview as image (⇧⌘C in read mode)
+- Markdown syntax guide (⇧⌘M)
+
+### For JSON
+- Real-time validation
+- Jump to error location (⌥⌘J)
+- Collapsible tree view
+- Pretty formatting
+
+### For .env
+- Clean key-value display
+- One-click copy of keys and values
+
+### Navigation
+- Sidebar file browser with pinned files (⌘D)
+- Quick Open (⌘K) — fuzzy search across all recent files and tabs
+- Tabs with drag reordering (⌘1-9 to switch)
+
+---
+
+## Keyboard Shortcuts
+
+### Most Used
+| Shortcut | Action |
+|----------|--------|
+| ⌘E | Toggle Preview/Raw mode |
+| ⌘N | New file |
+| ⌘⇧N | New from Clipboard |
+| ⌘W | Close tab |
+| ⌘/ | Show all shortcuts |
+
+### Navigation
+| Shortcut | Action |
+|----------|--------|
+| ⌘K | Quick Open |
+| ⌘⇧[ | Previous tab |
+| ⌘⇧] | Next tab |
+| ⌘1-9 | Switch to tab 1-9 |
+| ⌘0 | Toggle sidebar |
+
+### Editing (Markdown)
+| Shortcut | Action |
+|----------|--------|
+| ⌘B | Bold (**text**) |
+| ⌘I | Italic (*text*) |
+| ⌘U | Underline |
+| ⇧⌘X | Strikethrough |
+| ⌘L | Insert link |
+| ⇧⌘C | Inline code (\`code\`) |
+| ⌥⇧⌘C | Code block |
+
+### Files
+| Shortcut | Action |
+|----------|--------|
+| ⌘O | Open file |
+| ⌘S | Save |
+| ⌘⇧S | Save As... |
+| ⌘D | Toggle pin |
+| ⌘F | Find in file |
+| ⇧⌘I | Show file info |
+| ⌃⌘C | Copy filename |
+
+### JSON-specific
+| Shortcut | Action |
+|----------|--------|
+| ⌥⌘J | Jump to JSON error |
+
+---
+
+## Design and UX
+
+markjason's dark interface is meant to be easy on the eyes, and optimized for focus.
+
+The logo `#{}` is a mashup of:
+- `#` — Markdown heading syntax
+- `{}` — JSON object syntax
+
+Indicators in markjason are inspired by the Apollo Command Module. A warm, vintage light. I love them and I hope you will too.
+
+---
+
+## Requirements
+
+- macOS 14.0 (Sonoma) or later
+- Apple Silicon or Intel
+
+---
+
+## Installation
+
+1. Download the latest `.dmg` from [markjason.sh](https://markjason.sh/#download)
+2. Open the DMG and drag markjason to Applications
+3. Right-click → Open (first launch only, to bypass Gatekeeper)
+
+Updates are handled automatically via Sparkle.
+
+---
+
+## About
+
+Created by [Gijs Verheijke](https://gijs.substack.com) for people who read too many AI outputs.
+
+Built with Swift and SwiftUI. No Electron. No dependencies. No drama.
+
+---
+
+## Feedback
+
+Found a bug? Have a feature request?
+
+→ [Open an issue](https://github.com/gijsverheijke/markjason-landing/issues)
+
+---
+
+<div align="center">
+
+**[markjason.sh](https://markjason.sh)**
+
+</div>
