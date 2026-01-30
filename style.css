@@ -872,16 +872,21 @@ body {
         padding-top: calc(var(--space-xl) + 80px);
     }
     
-    .logo {
-        font-size: 2.5rem;
+    .hero-brand .logo {
+        font-size: 2rem !important;
     }
     
-    .hero-title {
-        font-size: 2.5rem;
+    .hero-brand .hero-title {
+        font-size: 2rem !important;
     }
     
     .hero-brand {
-        gap: 0.5rem;
+        gap: 0.4rem;
+        flex-wrap: wrap;
+    }
+    
+    .download-box {
+        padding: var(--space-md);
     }
     
     .app-window {
