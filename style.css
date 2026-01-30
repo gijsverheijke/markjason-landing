@@ -411,10 +411,15 @@ body {
 }
 
 .tab-dot.apollo-led {
+    background: #f5ead8;
+    background: -webkit-radial-gradient(circle at center, #fffef8 0%, #f0e8d8 100%);
     background: radial-gradient(circle at center, #fffef8 0%, #f0e8d8 100%);
+    -webkit-box-shadow: 
+        0 0 6px rgba(245, 230, 200, 0.8),
+        0 0 10px rgba(245, 230, 200, 0.5);
     box-shadow: 
-        0 0 4px rgba(245, 230, 200, 0.6),
-        0 0 8px rgba(245, 230, 200, 0.3);
+        0 0 6px rgba(245, 230, 200, 0.8),
+        0 0 10px rgba(245, 230, 200, 0.5);
 }
 
 .tab-name {
@@ -473,11 +478,16 @@ body {
 }
 
 .mode-active {
+    background: #f5ead8;
+    background: -webkit-radial-gradient(circle at center, #fffef8 0%, #f0e8d8 100%);
     background: radial-gradient(circle at center, #fffef8 0%, #f0e8d8 100%);
     color: #141416;
+    -webkit-box-shadow: 
+        0 0 8px rgba(245, 230, 200, 0.7),
+        0 0 16px rgba(245, 230, 200, 0.4);
     box-shadow: 
-        0 0 6px rgba(245, 230, 200, 0.5),
-        0 0 12px rgba(245, 230, 200, 0.2);
+        0 0 8px rgba(245, 230, 200, 0.7),
+        0 0 16px rgba(245, 230, 200, 0.4);
 }
 
 .mode-inactive {
@@ -502,10 +512,15 @@ body {
     width: 8px;
     height: 8px;
     border-radius: 50%;
+    background: #f5ead8;
+    background: -webkit-radial-gradient(circle at center, #fffef8 0%, #f0e8d8 100%);
     background: radial-gradient(circle at center, #fffef8 0%, #f0e8d8 100%);
+    -webkit-box-shadow: 
+        0 0 6px rgba(245, 230, 200, 0.8),
+        0 0 10px rgba(245, 230, 200, 0.5);
     box-shadow: 
-        0 0 4px rgba(245, 230, 200, 0.6),
-        0 0 8px rgba(245, 230, 200, 0.3);
+        0 0 6px rgba(245, 230, 200, 0.8),
+        0 0 10px rgba(245, 230, 200, 0.5);
 }
 
 /* Editor content */
