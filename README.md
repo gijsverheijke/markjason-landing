@@ -145,7 +145,15 @@ Indicators in markjason are inspired by the Apollo Command Module. A warm, vinta
 
 1. Download the latest `.dmg` from [markjason.sh](https://markjason.sh/#download)
 2. Open the DMG and drag markjason to Applications
-3. Right-click → Open (first launch only, to bypass Gatekeeper)
+3. **First launch** — the app is not yet notarized, so macOS will block it:
+   - Try: Right-click → Open → Open
+   - If that doesn't work, run this in Terminal:
+     ```bash
+     xattr -cr /Applications/markjason.app
+     ```
+   - Then open normally
+
+> **Note:** We're waiting for Apple to process our Developer ID. Once notarized, this step won't be needed.
 
 Updates are handled automatically via Sparkle.
 
