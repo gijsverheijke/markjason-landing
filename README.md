@@ -36,6 +36,21 @@ markjason is the antidote:
 
 ---
 
+## Install
+
+1. **[Download the DMG](https://github.com/gijsverheijke/markjason-landing/releases/download/v0.1-3/markjason-0.1-3.dmg)**
+2. Drag markjason to Applications
+3. **First launch** — the app is not yet notarized, so macOS will block it:
+   - Try: Right-click → Open → Open
+   - If that doesn't work, run in Terminal:
+     ```bash
+     xattr -cr /Applications/markjason.app
+     ```
+
+> Waiting for Apple to process our Developer ID. Once notarized, step 3 won't be needed.
+
+---
+
 ## Features
 
 ### Realtime updates
@@ -138,24 +153,6 @@ Indicators in markjason are inspired by the Apollo Command Module. A warm, vinta
 
 - macOS 14.0 (Sonoma) or later
 - Apple Silicon or Intel
-
----
-
-## Installation
-
-1. Download the latest `.dmg` from [markjason.sh](https://markjason.sh/#download)
-2. Open the DMG and drag markjason to Applications
-3. **First launch** — the app is not yet notarized, so macOS will block it:
-   - Try: Right-click → Open → Open
-   - If that doesn't work, run this in Terminal:
-     ```bash
-     xattr -cr /Applications/markjason.app
-     ```
-   - Then open normally
-
-> **Note:** We're waiting for Apple to process our Developer ID. Once notarized, this step won't be needed.
-
-Updates are handled automatically via Sparkle.
 
 ---
 
