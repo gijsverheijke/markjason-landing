@@ -405,8 +405,16 @@ body {
 }
 
 .tab-dot {
-    color: var(--accent-md);
-    font-size: 0.5rem;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+}
+
+.tab-dot.apollo-led {
+    background: radial-gradient(circle at center, #fffef8 0%, #f0e8d8 100%);
+    box-shadow: 
+        0 0 4px rgba(245, 230, 200, 0.6),
+        0 0 8px rgba(245, 230, 200, 0.3);
 }
 
 .tab-name {
@@ -450,20 +458,26 @@ body {
 
 .mode-toggle {
     display: flex;
-    background: #2a2a2e;
-    border-radius: 4px;
-    overflow: hidden;
+    background: rgba(42, 42, 46, 0.4);
+    border-radius: 5px;
+    padding: 1px;
 }
 
 .mode-active,
 .mode-inactive {
-    padding: 3px 10px;
-    font-size: 0.7rem;
+    padding: 4px 10px;
+    font-size: 0.65rem;
+    font-weight: 500;
+    border-radius: 4px;
+    letter-spacing: 0.02em;
 }
 
 .mode-active {
-    background: #3a3a3e;
-    color: var(--text-primary);
+    background: radial-gradient(circle at center, #fffef8 0%, #f0e8d8 100%);
+    color: #141416;
+    box-shadow: 
+        0 0 6px rgba(245, 230, 200, 0.5),
+        0 0 12px rgba(245, 230, 200, 0.2);
 }
 
 .mode-inactive {
@@ -476,9 +490,22 @@ body {
     opacity: 0.6;
 }
 
-.save-check {
+.save-indicator {
+    display: flex;
+    align-items: center;
+    gap: 4px;
     color: var(--text-muted);
-    opacity: 0.4;
+    font-size: 0.65rem;
+}
+
+.save-dot {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: radial-gradient(circle at center, #fffef8 0%, #f0e8d8 100%);
+    box-shadow: 
+        0 0 4px rgba(245, 230, 200, 0.6),
+        0 0 8px rgba(245, 230, 200, 0.3);
 }
 
 /* Editor content */
