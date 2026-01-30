@@ -1631,3 +1631,22 @@ body {
         gap: var(--space-md);
     }
 }
+
+/* Coming Soon States */
+.coming-soon-badge {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-subtle);
+    border-radius: 8px;
+    color: var(--text-secondary);
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.coming-soon-text {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-secondary);
+    margin-bottom: var(--space-sm);
+}
