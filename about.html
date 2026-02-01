@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About — markjason</title>
+    <meta name="description" content="About markjason — the fastest way to read specs, edit prompts, and manage configs.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="About — markjason">
+    <meta property="og:description" content="About markjason — the fastest way to read specs, edit prompts, and manage configs.">
+    <meta property="og:image" content="https://markjason.sh/og-image.png">
+    <meta property="og:url" content="https://markjason.sh/about">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <div class="grain"></div>
+    
+    <header class="header">
+        <nav class="nav">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/#features" class="nav-link">Features</a>
+            <a href="/#download" class="nav-link nav-link--cta">Download</a>
+        </nav>
+    </header>
+
+    <main class="about-main">
+        <article id="readme-content" class="readme-content">
+            <p class="loading">Loading...</p>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-mark">#</span><span class="logo-brace">{</span><span class="logo-brace">}</span>
+                <span class="footer-name">markjason</span>
+            </div>
+            <p class="footer-tagline">Code is cheap. Show me the prompt.</p>
+            <p class="footer-copy">No cookies. No analytics. We literally don't know you're here.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script>
+        fetch('README.md')
+            .then(response => response.text())
+            .then(md => {
+                document.getElementById('readme-content').innerHTML = marked.parse(md);
+            })
+            .catch(err => {
+                document.getElementById('readme-content').innerHTML = '<p>Failed to load README.</p>';
+                console.error(err);
+            });
+    </script>
+    <script src="script.js"></script>
+</body>
+</html>

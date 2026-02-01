@@ -1727,3 +1727,160 @@ body {
     color: var(--text-secondary);
     margin-bottom: var(--space-sm);
 }
+
+/* ============================================
+   About Page / README Content
+   ============================================ */
+
+.about-main {
+    min-height: 100vh;
+    padding: var(--space-2xl) var(--space-lg);
+    padding-top: calc(var(--space-2xl) + 60px);
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.readme-content {
+    color: var(--text-secondary);
+    line-height: 1.8;
+}
+
+.readme-content .loading {
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.readme-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: var(--space-xl) 0 var(--space-lg);
+    letter-spacing: -0.02em;
+}
+
+.readme-content h2 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: var(--space-xl) 0 var(--space-md);
+    padding-top: var(--space-md);
+    border-top: 1px solid var(--border);
+}
+
+.readme-content h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin: var(--space-lg) 0 var(--space-sm);
+}
+
+.readme-content p {
+    margin-bottom: var(--space-md);
+}
+
+.readme-content a {
+    color: var(--accent-md);
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    transition: color 0.2s ease;
+}
+
+.readme-content a:hover {
+    color: var(--text-primary);
+}
+
+.readme-content ul,
+.readme-content ol {
+    margin: var(--space-md) 0;
+    padding-left: var(--space-lg);
+}
+
+.readme-content li {
+    margin-bottom: var(--space-xs);
+}
+
+.readme-content code {
+    font-family: var(--font-mono);
+    font-size: 0.9em;
+    background: var(--bg-elevated);
+    padding: 0.15em 0.4em;
+    border-radius: 4px;
+    border: 1px solid var(--border);
+    color: var(--syntax-code);
+}
+
+.readme-content pre {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: var(--space-md);
+    overflow-x: auto;
+    margin: var(--space-md) 0;
+}
+
+.readme-content pre code {
+    background: none;
+    border: none;
+    padding: 0;
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+}
+
+.readme-content blockquote {
+    border-left: 3px solid var(--accent-md);
+    padding-left: var(--space-md);
+    margin: var(--space-md) 0;
+    color: var(--text-muted);
+    font-style: italic;
+}
+
+.readme-content hr {
+    border: none;
+    border-top: 1px solid var(--border);
+    margin: var(--space-xl) 0;
+}
+
+.readme-content table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: var(--space-md) 0;
+    font-size: 0.9rem;
+}
+
+.readme-content th,
+.readme-content td {
+    text-align: left;
+    padding: var(--space-sm) var(--space-md);
+    border: 1px solid var(--border);
+}
+
+.readme-content th {
+    background: var(--bg-elevated);
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.readme-content td {
+    background: var(--bg-secondary);
+}
+
+.readme-content strong {
+    color: var(--text-primary);
+    font-weight: 600;
+}
+
+.readme-content em {
+    font-style: italic;
+}
+
+/* Center-aligned div styling (for README header) */
+.readme-content > div[align="center"] {
+    text-align: center;
+    margin: var(--space-xl) 0;
+}
+
+.readme-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
