@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>markjason vs VS Code — The Right Tool for the Job</title>
-    <meta name="description" content="VS Code is a powerful IDE. markjason is a fast viewer for markdown, JSON, and .env files. Compare them to find what's right for your workflow.">
+    <meta name="description" content="VS Code is a powerful IDE. markjason is a fast, focused editor for markdown, JSON, and .env files. Compare them to find what's right for your workflow.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -73,6 +73,11 @@
                         <td><strong>Markdown preview</strong></td>
                         <td>Instant toggle (⌘E)</td>
                         <td>Side panel (Ctrl+Shift+V) or extension</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Edit mode typography</strong></td>
+                        <td>✅ Headers styled larger while editing</td>
+                        <td>❌ Monospace only, no visual hierarchy</td>
                     </tr>
                     <tr>
                         <td><strong>Real-time file updates</strong></td>
@@ -154,16 +159,17 @@
             
             <h3>Markdown-Specific Limitations in VS Code</h3>
             
-            <p>VS Code's markdown support is solid, but it's designed for a side panel workflow:</p>
+            <p>VS Code's markdown support is solid, but it's designed as an afterthought to code editing:</p>
             
             <ul>
                 <li><strong>Preview is separate</strong> — you split your window between editor and preview</li>
+                <li><strong>No visual hierarchy while editing</strong> — all text is the same size in the editor. Headers, body text, code — all monospace, all identical. You lose the document structure.</li>
                 <li><strong>Extensions required for power features</strong> — "Markdown All in One", "Markdown Preview Enhanced" etc. (which can <a href="https://github.com/yzhang-gh/vscode-markdown/issues/578" target="_blank">cause performance issues</a>)</li>
                 <li><strong>No token counting</strong> — for AI prompt work, you need extensions</li>
                 <li><strong>No "copy as image"</strong> — for sharing rendered markdown</li>
             </ul>
             
-            <p>markjason was built specifically for these use cases from day one.</p>
+            <p>markjason treats markdown as a first-class citizen. Headers are visually larger even in edit mode — you can see your document structure while writing. It's a small thing that makes a big difference when you're editing prompts all day.</p>
             
             <h2>Real-Time File Watching</h2>
             
@@ -218,13 +224,13 @@
             
             <h2>The Bottom Line</h2>
             
-            <p>VS Code is an IDE. markjason is a viewer.</p>
+            <p>VS Code does everything. markjason does three things extremely well.</p>
             
-            <p>You wouldn't open Photoshop to look at a JPEG. You wouldn't open Excel to read a CSV. And you don't need to open VS Code just to read what your AI wrote.</p>
+            <p>VS Code is the Swiss Army knife — it'll handle markdown, but it treats it like any other file. markjason is a scalpel — purpose-built for markdown, JSON, and .env, with thoughtful details like visual hierarchy while editing and instant preview toggling.</p>
             
             <p>They're not competitors. They're complements.</p>
             
-            <p><strong>Use VS Code for coding. Use markjason for everything around coding.</strong></p>
+            <p><strong>Use VS Code for coding. Use markjason for the files around your code — the prompts, the specs, the configs.</strong></p>
             
             <div class="comparison-cta">
                 <a href="/#download" class="btn btn-primary">Download markjason</a>
