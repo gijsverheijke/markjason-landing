@@ -169,22 +169,21 @@
         observer.observe(el);
     });
 
-    // Download button - show "coming soon" (waiting for Apple notarization)
-    const downloadBtn = document.getElementById('download-btn');
-    if (downloadBtn) {
-        downloadBtn.addEventListener('click', (e) => {
+    // Download buttons - show "coming soon" (waiting for Apple notarization)
+    document.querySelectorAll('.download-btn').forEach(btn => {
+        btn.addEventListener('click', (e) => {
             e.preventDefault();
             
-            const originalHTML = downloadBtn.innerHTML;
-            downloadBtn.innerHTML = '<span class="btn-icon">⏳</span> Coming soon — waiting for Apple';
-            downloadBtn.style.pointerEvents = 'none';
+            const originalHTML = btn.innerHTML;
+            btn.innerHTML = '<span class="btn-icon">⏳</span> Coming soon — waiting for Apple';
+            btn.style.pointerEvents = 'none';
             
             setTimeout(() => {
-                downloadBtn.innerHTML = originalHTML;
-                downloadBtn.style.pointerEvents = 'auto';
+                btn.innerHTML = originalHTML;
+                btn.style.pointerEvents = 'auto';
             }, 3000);
         });
-    }
+    });
 
     // Keyboard shortcuts easter egg
     const konamiCode = ['ArrowUp', 'ArrowUp', 'ArrowDown', 'ArrowDown', 'ArrowLeft', 'ArrowRight', 'ArrowLeft', 'ArrowRight', 'b', 'a'];
