@@ -169,21 +169,12 @@
         observer.observe(el);
     });
 
-    // Download button - show "coming soon" message
+    // Download button - tracking (optional, download works normally)
     const downloadBtn = document.getElementById('download-btn');
     if (downloadBtn) {
-        downloadBtn.addEventListener('click', (e) => {
-            e.preventDefault();
-            
-            // Temporarily change button text
-            const originalHTML = downloadBtn.innerHTML;
-            downloadBtn.innerHTML = '<span class="btn-icon">⏳</span> Coming soon!';
-            downloadBtn.style.pointerEvents = 'none';
-            
-            setTimeout(() => {
-                downloadBtn.innerHTML = originalHTML;
-                downloadBtn.style.pointerEvents = 'auto';
-            }, 2000);
+        downloadBtn.addEventListener('click', () => {
+            // Let the default link behavior work
+            console.log('Download clicked');
         });
     }
 
