@@ -169,12 +169,20 @@
         observer.observe(el);
     });
 
-    // Download button - tracking (optional, download works normally)
+    // Download button - show "coming soon" (waiting for Apple notarization)
     const downloadBtn = document.getElementById('download-btn');
     if (downloadBtn) {
-        downloadBtn.addEventListener('click', () => {
-            // Let the default link behavior work
-            console.log('Download clicked');
+        downloadBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            
+            const originalHTML = downloadBtn.innerHTML;
+            downloadBtn.innerHTML = '<span class="btn-icon">⏳</span> Coming soon — waiting for Apple';
+            downloadBtn.style.pointerEvents = 'none';
+            
+            setTimeout(() => {
+                downloadBtn.innerHTML = originalHTML;
+                downloadBtn.style.pointerEvents = 'auto';
+            }, 3000);
         });
     }
 
