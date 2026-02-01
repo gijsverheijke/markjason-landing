@@ -1734,10 +1734,18 @@ body {
 
 .about-main {
     min-height: 100vh;
-    padding: var(--space-2xl) var(--space-lg);
-    padding-top: calc(var(--space-2xl) + 60px);
-    max-width: 800px;
+    padding: var(--space-2xl) var(--space-xl);
+    padding-top: calc(var(--space-2xl) + 80px);
+    max-width: 900px;
     margin: 0 auto;
+    box-sizing: border-box;
+}
+
+@media (max-width: 768px) {
+    .about-main {
+        padding-left: var(--space-lg);
+        padding-right: var(--space-lg);
+    }
 }
 
 .readme-content {
