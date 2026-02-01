@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markjason vs Obsidian — Different Tools, Different Goals</title>
+    <meta name="description" content="Obsidian is a knowledge management powerhouse. markjason is a fast markdown viewer for AI workflows. Compare them to find your fit.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="markjason vs Obsidian — Different Tools, Different Goals">
+    <meta property="og:description" content="Obsidian is a knowledge management powerhouse. markjason is a fast markdown viewer for AI workflows. Compare them to find your fit.">
+    <meta property="og:image" content="https://markjason.sh/og-image.png">
+    <meta property="og:url" content="https://markjason.sh/docs/markjason-vs-obsidian">
+    <meta property="og:type" content="article">
+</head>
+<body>
+    <div class="grain"></div>
+    
+    <header class="header">
+        <nav class="nav">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/#features" class="nav-link">Features</a>
+            <a href="/about" class="nav-link">About</a>
+            <a href="/#download" class="nav-link nav-link--cta">Download</a>
+        </nav>
+    </header>
+
+    <main class="about-main">
+        <article class="readme-content comparison-article">
+            <h1><span class="logo-mark">#</span><span class="logo-brace">{</span><span class="logo-brace">}</span> markjason vs Obsidian</h1>
+            
+            <p class="comparison-intro">
+                <strong>Obsidian is a phenomenal tool for building a personal knowledge base.</strong> markjason isn't trying to be that. Here's why both exist.
+            </p>
+            
+            <h2>The Quick Comparison</h2>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>markjason</th>
+                        <th>Obsidian</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Primary purpose</strong></td>
+                        <td>Fast viewer for .md, .json, .env</td>
+                        <td>Personal knowledge management</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Core paradigm</strong></td>
+                        <td>Files as files</td>
+                        <td>Vault as interconnected graph</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Launch time</strong></td>
+                        <td>~0.3 seconds</td>
+                        <td>2-4 seconds (vault dependent)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Memory usage</strong></td>
+                        <td>~100 MB</td>
+                        <td>~280-400 MB base, 1GB+ with plugins</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Framework</strong></td>
+                        <td>Native Swift + SwiftUI</td>
+                        <td>Electron (Chromium-based)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>JSON editing</strong></td>
+                        <td>✅ Built-in with validation</td>
+                        <td>❌ Markdown only</td>
+                    </tr>
+                    <tr>
+                        <td><strong>.env files</strong></td>
+                        <td>✅ Clean key-value display</td>
+                        <td>❌ No support</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Backlinks</strong></td>
+                        <td>❌ No</td>
+                        <td>✅ Core feature</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Graph view</strong></td>
+                        <td>❌ No</td>
+                        <td>✅ Core feature</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Plugins</strong></td>
+                        <td>❌ No</td>
+                        <td>✅ 2000+ community plugins</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Price</strong></td>
+                        <td>Free</td>
+                        <td>Free (Sync/Publish paid)</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h2>What Obsidian Does Brilliantly</h2>
+            
+            <p>Obsidian has earned its devoted following for good reasons:</p>
+            
+            <ul>
+                <li><strong>[[Wikilinks]] and backlinks</strong> — the killer feature. Link notes together and see what connects to what. Build a "second brain."</li>
+                <li><strong>Graph view</strong> — visualize your knowledge as an interconnected network</li>
+                <li><strong>Live preview mode</strong> — see formatting as you type (like Typora)</li>
+                <li><strong>Massive plugin ecosystem</strong> — 2000+ community plugins for everything from Kanban boards to spaced repetition</li>
+                <li><strong>Canvas</strong> — infinite canvas for visual thinking and linking</li>
+                <li><strong>Daily notes</strong> — built-in journaling workflow</li>
+                <li><strong>Templates</strong> — reusable note structures</li>
+                <li><strong>Local-first privacy</strong> — your data stays on your device</li>
+            </ul>
+            
+            <p>If you're building a Zettelkasten, a personal wiki, or a long-term knowledge base, Obsidian is incredible.</p>
+            
+            <h2>What markjason Does Differently</h2>
+            
+            <p>markjason was built for a specific workflow: <strong>agentic coding</strong>.</p>
+            
+            <p>When you're working with AI coding agents (Claude Code, Cursor, Codex, etc.), you're constantly:</p>
+            
+            <ul>
+                <li>Reading <code>AGENTS.md</code> files that define agent behavior</li>
+                <li>Editing prompts and system instructions</li>
+                <li>Checking <code>mcp.json</code> or similar config files</li>
+                <li>Managing <code>.env</code> files across projects</li>
+                <li>Reviewing markdown docs that agents generate</li>
+            </ul>
+            
+            <p>These are <strong>transient files</strong>, not permanent knowledge. You don't need to link them. You need to open, read, edit, close. Fast.</p>
+            
+            <h3>The "Vault" Problem</h3>
+            
+            <p>Obsidian is vault-centric. Every file needs to live in a vault. This is perfect for knowledge management but awkward for developer workflows where:</p>
+            
+            <ul>
+                <li>Files are scattered across many project directories</li>
+                <li>You want to double-click a file and just see it</li>
+                <li>You don't want to "import" a config file into a vault</li>
+            </ul>
+            
+            <p>markjason opens any file, anywhere. No vault. No project. Just the file.</p>
+            
+            <h3>The Format Gap</h3>
+            
+            <p>Obsidian is markdown-only. Makes sense for a note-taking app.</p>
+            
+            <p>But developer workflows involve:</p>
+            
+            <ul>
+                <li><strong>JSON configs</strong> — <code>mcp.json</code>, <code>package.json</code>, <code>tsconfig.json</code>, etc.</li>
+                <li><strong>.env files</strong> — environment variables across projects</li>
+            </ul>
+            
+            <p>markjason handles all three natively:</p>
+            
+            <ul>
+                <li><strong>JSON</strong> — real-time validation, jump-to-error, collapsible tree view</li>
+                <li><strong>.env</strong> — clean display with one-click copy for keys and values</li>
+                <li><strong>Markdown</strong> — instant read/edit toggle, copy as image</li>
+            </ul>
+            
+            <h3>The Resource Story</h3>
+            
+            <p>Obsidian, like VS Code, uses Electron. Users on <a href="https://www.reddit.com/r/ObsidianMD/comments/scwg7a/obsidian_is_a_ram_hog/" target="_blank">Reddit</a> regularly discuss memory usage:</p>
+            
+            <blockquote>
+                "When first opened without any additional windows or tabs, it takes almost 280 MB of RAM"<br>
+                "Obsidian can use 1 GB+ of RAM with heavy plugin usage"
+            </blockquote>
+            
+            <p>markjason runs at ~100 MB. Native Swift means no Chromium overhead.</p>
+            
+            <p>This matters when you're running AI tools, language servers, and browsers all at once.</p>
+            
+            <h2>Real-Time File Watching</h2>
+            
+            <p>Here's a feature that matters for AI workflows: when your coding agent edits a file, markjason updates instantly. You see changes the moment they're saved.</p>
+            
+            <p>Obsidian handles this within vaults, but markjason does it for any file, anywhere on your system.</p>
+            
+            <h2>Features markjason Doesn't Have (By Design)</h2>
+            
+            <p>markjason deliberately skips:</p>
+            
+            <ul>
+                <li><strong>No backlinks</strong> — not building a knowledge graph</li>
+                <li><strong>No graph view</strong> — not visualizing connections</li>
+                <li><strong>No plugins</strong> — focused simplicity</li>
+                <li><strong>No sync</strong> — use git, iCloud, Dropbox, whatever</li>
+                <li><strong>No templates</strong> — create files yourself or let AI do it</li>
+                <li><strong>No daily notes</strong> — use Obsidian for journaling</li>
+            </ul>
+            
+            <p>This isn't missing features. It's focus.</p>
+            
+            <h2>The Vibecheck</h2>
+            
+            <table class="comparison-table vibecheck">
+                <thead>
+                    <tr>
+                        <th>Scenario</th>
+                        <th>Better tool</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Building a personal wiki</td>
+                        <td>Obsidian</td>
+                    </tr>
+                    <tr>
+                        <td>Linking notes together</td>
+                        <td>Obsidian</td>
+                    </tr>
+                    <tr>
+                        <td>Daily journaling</td>
+                        <td>Obsidian</td>
+                    </tr>
+                    <tr>
+                        <td>Long-term knowledge management</td>
+                        <td>Obsidian</td>
+                    </tr>
+                    <tr>
+                        <td>Quickly reading AGENTS.md</td>
+                        <td><strong>markjason</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Editing mcp.json config</td>
+                        <td><strong>markjason</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Managing .env files</td>
+                        <td><strong>markjason</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Watching AI-edited files in real-time</td>
+                        <td><strong>markjason</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Opening a random markdown file instantly</td>
+                        <td><strong>markjason</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Counting tokens in a prompt</td>
+                        <td><strong>markjason</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h2>Can You Use Both?</h2>
+            
+            <p>Absolutely. They're complementary:</p>
+            
+            <ul>
+                <li><strong>Obsidian</strong> for your personal knowledge vault — notes, ideas, references, journals</li>
+                <li><strong>markjason</strong> for your coding workflow — configs, prompts, specs, agent files</li>
+            </ul>
+            
+            <p>Many developers use Obsidian for thinking and learning, then switch to markjason when they're in the flow of coding with AI.</p>
+            
+            <h2>The Philosophy Difference</h2>
+            
+            <p>Obsidian's tagline: <em>"Sharpen your thinking."</em></p>
+            
+            <p>markjason's tagline: <em>"The fastest way to read specs, edit prompts, and manage configs."</em></p>
+            
+            <p>Obsidian is about <strong>accumulating and connecting knowledge</strong>.</p>
+            
+            <p>markjason is about <strong>getting in, doing the thing, getting out</strong>.</p>
+            
+            <p>Both are valid. Both are useful. They're just different.</p>
+            
+            <h2>The Bottom Line</h2>
+            
+            <p>If you're looking for a markdown-based second brain with powerful linking and a thriving plugin ecosystem, <strong>use Obsidian</strong>. It's exceptional at what it does.</p>
+            
+            <p>If you're looking for a fast, native app to view and edit the config files and markdown docs in your AI coding workflow, <strong>try markjason</strong>.</p>
+            
+            <p>You probably need both.</p>
+            
+            <div class="comparison-cta">
+                <a href="/#download" class="btn btn-primary">Download markjason</a>
+                <p class="cta-note">Free. Native. No vault required.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-mark">#</span><span class="logo-brace">{</span><span class="logo-brace">}</span>
+                <span class="footer-name">markjason</span>
+            </div>
+            <p class="footer-tagline">Code is cheap. Show me the prompt.</p>
+            <p class="footer-copy">No cookies. No analytics. We literally don't know you're here.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    
+    <style>
+        .comparison-article {
+            max-width: 800px;
+        }
+        
+        .comparison-intro {
+            font-size: 1.2em;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            font-size: 0.95rem;
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color, #333);
+        }
+        
+        .comparison-table th {
+            background: rgba(255,255,255,0.05);
+            font-weight: 600;
+        }
+        
+        .comparison-table tr:hover {
+            background: rgba(255,255,255,0.02);
+        }
+        
+        .vibecheck td:last-child {
+            font-weight: 500;
+        }
+        
+        .comparison-cta {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: rgba(255,255,255,0.03);
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .cta-note {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9em;
+        }
+        
+        blockquote {
+            border-left: 3px solid var(--accent-color, #f97316);
+            margin: 1.5rem 0;
+            padding: 0.5rem 1rem;
+            background: rgba(255,255,255,0.02);
+            font-style: italic;
+            color: var(--text-secondary);
+        }
+        
+        h2 {
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        h3 {
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin: 0.5rem 0;
+        }
+        
+        a {
+            color: var(--accent-color, #f97316);
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</body>
+</html>

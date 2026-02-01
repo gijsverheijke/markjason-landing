@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>markjason vs VS Code — The Right Tool for the Job</title>
+    <meta name="description" content="VS Code is a powerful IDE. markjason is a fast viewer for markdown, JSON, and .env files. Compare them to find what's right for your workflow.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="markjason vs VS Code — The Right Tool for the Job">
+    <meta property="og:description" content="VS Code is a powerful IDE. markjason is a fast viewer for markdown, JSON, and .env files. Compare them to find what's right for your workflow.">
+    <meta property="og:image" content="https://markjason.sh/og-image.png">
+    <meta property="og:url" content="https://markjason.sh/docs/markjason-vs-vscode">
+    <meta property="og:type" content="article">
+</head>
+<body>
+    <div class="grain"></div>
+    
+    <header class="header">
+        <nav class="nav">
+            <a href="/" class="nav-link">Home</a>
+            <a href="/#features" class="nav-link">Features</a>
+            <a href="/about" class="nav-link">About</a>
+            <a href="/#download" class="nav-link nav-link--cta">Download</a>
+        </nav>
+    </header>
+
+    <main class="about-main">
+        <article class="readme-content comparison-article">
+            <h1><span class="logo-mark">#</span><span class="logo-brace">{</span><span class="logo-brace">}</span> markjason vs VS Code</h1>
+            
+            <p class="comparison-intro">
+                <strong>VS Code is an incredible IDE.</strong> It's also overkill when you just need to check a config file or read a spec your agent wrote.
+            </p>
+            
+            <h2>The TL;DR</h2>
+            
+            <table class="comparison-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>markjason</th>
+                        <th>VS Code</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Purpose</strong></td>
+                        <td>Fast viewer/editor for .md, .json, .env</td>
+                        <td>Full IDE for all programming tasks</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Launch time</strong></td>
+                        <td>~0.3 seconds</td>
+                        <td>2-5 seconds (varies with extensions)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Memory usage</strong></td>
+                        <td>~100 MB</td>
+                        <td>~500-800 MB (can exceed 1GB+)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Framework</strong></td>
+                        <td>Native Swift + SwiftUI</td>
+                        <td>Electron (Chromium-based)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Markdown preview</strong></td>
+                        <td>Instant toggle (⌘E)</td>
+                        <td>Side panel (Ctrl+Shift+V) or extension</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Real-time file updates</strong></td>
+                        <td>✅ Built-in</td>
+                        <td>⚠️ Manual reload or extension</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Token count</strong></td>
+                        <td>✅ Built-in (⇧⌘I)</td>
+                        <td>❌ Requires extension</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Copy as image</strong></td>
+                        <td>✅ Built-in (⇧⌘C)</td>
+                        <td>❌ Requires extension</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Price</strong></td>
+                        <td>Free</td>
+                        <td>Free</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h2>When VS Code is the Right Choice</h2>
+            
+            <p>VS Code is a powerhouse. If you need:</p>
+            
+            <ul>
+                <li><strong>Multi-language development</strong> — VS Code supports every programming language imaginable with extensions</li>
+                <li><strong>Git integration</strong> — built-in source control, diff views, and merge conflict resolution</li>
+                <li><strong>Debugging</strong> — breakpoints, variable inspection, integrated terminals</li>
+                <li><strong>IntelliSense</strong> — code completion, parameter hints, quick info for your entire codebase</li>
+                <li><strong>Extensions ecosystem</strong> — 40,000+ extensions for every workflow imaginable</li>
+                <li><strong>Remote development</strong> — SSH, containers, WSL, GitHub Codespaces</li>
+                <li><strong>Workspace features</strong> — multi-root workspaces, project-wide search and replace</li>
+            </ul>
+            
+            <p>For coding, VS Code is exceptional. Use it.</p>
+            
+            <h2>When markjason Fits Better</h2>
+            
+            <p>In agentic coding workflows, you're often not <em>writing</em> code. You're:</p>
+            
+            <ul>
+                <li><strong>Reading specs</strong> that your AI generated</li>
+                <li><strong>Editing prompts</strong> in AGENTS.md or similar files</li>
+                <li><strong>Checking configs</strong> like mcp.json or .env files</li>
+                <li><strong>Reviewing changes</strong> that agents made to markdown docs</li>
+            </ul>
+            
+            <p>For these tasks, launching VS Code is like driving a semi-truck to the corner store.</p>
+            
+            <h3>The "Just Open a File" Problem</h3>
+            
+            <p>You double-click an <code>.md</code> file. VS Code:</p>
+            
+            <ol>
+                <li>Spins up Electron (a full Chromium instance)</li>
+                <li>Loads your extensions</li>
+                <li>Initializes language services</li>
+                <li>Scans your workspace</li>
+                <li>Finally shows your file</li>
+            </ol>
+            
+            <p>markjason:</p>
+            
+            <ol>
+                <li>Shows your file</li>
+            </ol>
+            
+            <p>That's it. Native Swift means instant startup.</p>
+            
+            <h3>The Memory Question</h3>
+            
+            <p>VS Code's Electron architecture means every window runs its own Chromium instance. Users on <a href="https://stackoverflow.com/questions/53658769/why-does-vs-code-require-so-much-memory" target="_blank">Stack Overflow</a> and <a href="https://www.reddit.com/r/webdev/comments/1c5e5ll/its_normal_that_vscode_taking_6070_of_my_memory/" target="_blank">Reddit</a> regularly report 500MB-1GB+ memory usage, especially with extensions.</p>
+            
+            <p>markjason runs at ~100MB. That's 5x less than VS Code's baseline.</p>
+            
+            <h3>Markdown-Specific Limitations in VS Code</h3>
+            
+            <p>VS Code's markdown support is solid, but it's designed for a side panel workflow:</p>
+            
+            <ul>
+                <li><strong>Preview is separate</strong> — you split your window between editor and preview</li>
+                <li><strong>Extensions required for power features</strong> — "Markdown All in One", "Markdown Preview Enhanced" etc. (which can <a href="https://github.com/yzhang-gh/vscode-markdown/issues/578" target="_blank">cause performance issues</a>)</li>
+                <li><strong>No token counting</strong> — for AI prompt work, you need extensions</li>
+                <li><strong>No "copy as image"</strong> — for sharing rendered markdown</li>
+            </ul>
+            
+            <p>markjason was built specifically for these use cases from day one.</p>
+            
+            <h2>Real-Time File Watching</h2>
+            
+            <p>When you're working with AI coding agents like Claude Code, Cursor, or Codex, your files change constantly. markjason watches for external changes and updates instantly — you see what your agent wrote the moment it saves.</p>
+            
+            <p>VS Code requires manual reload or specific extension configuration to achieve this.</p>
+            
+            <h2>The Vibecheck</h2>
+            
+            <table class="comparison-table vibecheck">
+                <thead>
+                    <tr>
+                        <th>Scenario</th>
+                        <th>Better tool</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Writing Python code</td>
+                        <td>VS Code</td>
+                    </tr>
+                    <tr>
+                        <td>Debugging JavaScript</td>
+                        <td>VS Code</td>
+                    </tr>
+                    <tr>
+                        <td>Multi-file refactoring</td>
+                        <td>VS Code</td>
+                    </tr>
+                    <tr>
+                        <td>Quickly reading AGENTS.md</td>
+                        <td><strong>markjason</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Editing mcp.json config</td>
+                        <td><strong>markjason</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Watching agent-edited files</td>
+                        <td><strong>markjason</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Copying .env values to another project</td>
+                        <td><strong>markjason</strong></td>
+                    </tr>
+                    <tr>
+                        <td>Sharing rendered markdown</td>
+                        <td><strong>markjason</strong></td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h2>The Bottom Line</h2>
+            
+            <p>VS Code is an IDE. markjason is a viewer.</p>
+            
+            <p>You wouldn't open Photoshop to look at a JPEG. You wouldn't open Excel to read a CSV. And you don't need to open VS Code just to read what your AI wrote.</p>
+            
+            <p>They're not competitors. They're complements.</p>
+            
+            <p><strong>Use VS Code for coding. Use markjason for everything around coding.</strong></p>
+            
+            <div class="comparison-cta">
+                <a href="/#download" class="btn btn-primary">Download markjason</a>
+                <p class="cta-note">Free. Native. No Electron.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-mark">#</span><span class="logo-brace">{</span><span class="logo-brace">}</span>
+                <span class="footer-name">markjason</span>
+            </div>
+            <p class="footer-tagline">Code is cheap. Show me the prompt.</p>
+            <p class="footer-copy">No cookies. No analytics. We literally don't know you're here.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    
+    <style>
+        .comparison-article {
+            max-width: 800px;
+        }
+        
+        .comparison-intro {
+            font-size: 1.2em;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+        }
+        
+        .comparison-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 2rem 0;
+            font-size: 0.95rem;
+        }
+        
+        .comparison-table th,
+        .comparison-table td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border-color, #333);
+        }
+        
+        .comparison-table th {
+            background: rgba(255,255,255,0.05);
+            font-weight: 600;
+        }
+        
+        .comparison-table tr:hover {
+            background: rgba(255,255,255,0.02);
+        }
+        
+        .vibecheck td:last-child {
+            font-weight: 500;
+        }
+        
+        .comparison-cta {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: rgba(255,255,255,0.03);
+            border-radius: 8px;
+            text-align: center;
+        }
+        
+        .cta-note {
+            margin-top: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-secondary);
+        }
+        
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9em;
+        }
+        
+        h2 {
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        h3 {
+            margin-top: 2rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+        }
+        
+        li {
+            margin: 0.5rem 0;
+        }
+        
+        a {
+            color: var(--accent-color, #f97316);
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</body>
+</html>
