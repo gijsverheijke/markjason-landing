@@ -38,16 +38,9 @@ markjason is the antidote:
 
 ## Install
 
-1. **[Download the DMG](https://github.com/gijsverheijke/markjason-landing/releases/download/v0.1-3/markjason-0.1-3.dmg)**
+1. **[Download the DMG](https://github.com/gijsverheijke/markjason-landing/releases/download/v0.1-3/markjason-0.26.dmg)**
 2. Drag markjason to Applications
-3. **First launch** — the app is not yet notarized, so macOS will block it:
-   - Try: Right-click → Open → Open
-   - If that doesn't work, run in Terminal:
-     ```bash
-     xattr -cr /Applications/markjason.app
-     ```
-
-> Waiting for Apple to process our Developer ID. Once notarized, step 3 won't be needed.
+3. Open and enjoy
 
 ---
 
