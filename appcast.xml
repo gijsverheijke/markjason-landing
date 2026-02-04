@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <channel>
+        <title>markjason</title>
+        <link>https://markjason.sh</link>
+        <description>markjason updates</description>
+        <language>en</language>
+        <item>
+            <title>Version 0.26 (2)</title>
+            <sparkle:version>2</sparkle:version>
+            <sparkle:shortVersionString>0.26</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <pubDate>Wed, 05 Feb 2026 07:20:00 +0800</pubDate>
+            <enclosure 
+                url="https://github.com/gijsverheijke/markjason-landing/releases/download/v0.1-3/markjason-0.26.dmg"
+                sparkle:edSignature="6R+B7OQFAjXuKvwY2sVH0NkhUBh03DrkQ2O/9gDPgv1mEnhdGbp8KEfFPvJ4jGnN5pUcsOeTwmIc2iywEAcxBg=="
+                length="3739061"
+                type="application/octet-stream" />
+        </item>
+    </channel>
+</rss>
