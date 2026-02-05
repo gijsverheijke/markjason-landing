@@ -931,9 +931,24 @@ body {
    ============================================ */
 
 @media (max-width: 768px) {
+    .header {
+        position: relative;
+        padding: var(--space-sm) var(--space-md);
+    }
+    
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: var(--space-sm) var(--space-md);
+    }
+    
+    .nav-link {
+        font-size: 0.8rem;
+    }
+    
     .hero {
         padding: var(--space-xl) var(--space-md);
-        padding-top: calc(var(--space-xl) + 80px);
+        padding-top: var(--space-lg);
     }
     
     .hero-brand .logo {
