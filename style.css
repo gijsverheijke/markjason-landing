@@ -939,7 +939,26 @@ body {
 
 .footer-tagline {
     color: var(--text-muted);
-    margin-bottom: var(--space-sm);
+    margin-bottom: var(--space-md);
+}
+
+.footer-nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--space-sm) var(--space-lg);
+    margin-bottom: var(--space-lg);
+}
+
+.footer-nav a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 0.875rem;
+    transition: color 0.2s ease;
+}
+
+.footer-nav a:hover {
+    color: var(--accent-green);
 }
 
 .footer-copy {

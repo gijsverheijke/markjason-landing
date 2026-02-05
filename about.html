@@ -23,9 +23,18 @@
     
     <header class="header">
         <nav class="nav">
-            <a href="/" class="nav-link">Home</a>
-            <a href="/#features" class="nav-link">Features</a>
-            <a href="/#download" class="nav-link nav-link--cta">Download</a>
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <div class="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/#features" class="nav-link">Features</a>
+                <a href="/#why" class="nav-link">Why tho?</a>
+                <a href="/#never" class="nav-link">Anti-features</a>
+                <a href="/#download" class="nav-link nav-link--cta">Download</a>
+            </div>
         </nav>
     </header>
 
@@ -42,6 +51,15 @@
                 <span class="footer-name">markjason</span>
             </div>
             <p class="footer-tagline">Code is cheap. Show me the prompt.</p>
+            
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/#features">Features</a>
+                <a href="/#download">Download</a>
+                <a href="https://github.com/gijsverheijke/markjason-landing">GitHub</a>
+            </nav>
+            
             <p class="footer-copy">No cookies. No analytics. We literally don't know you're here.</p>
         </div>
     </footer>
