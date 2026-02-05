@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Best Markdown Editor for AI Coding — markjason</title>
+    <meta name="description" content="markjason is the fastest markdown editor for AI coding workflows. Live file sync with Claude Code, Cursor, and Codex. See agent edits in real-time. Native macOS, 0.3s launch, ~100MB RAM.">
+    <link rel="canonical" href="https://markjason.sh/use-cases/ai-coding-editor">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Best Markdown Editor for AI Coding — markjason">
+    <meta property="og:description" content="The fastest markdown editor for AI coding workflows. Live file sync with Claude Code, Cursor, and Codex.">
+    <meta property="og:image" content="https://markjason.sh/og-image.png">
+    <meta property="og:url" content="https://markjason.sh/use-cases/ai-coding-editor">
+    <meta property="og:type" content="article">
+    
+    <!-- JSON-LD Article Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Article",
+        "headline": "Best Markdown Editor for AI Coding Workflows",
+        "description": "Why markjason is the ideal editor for developers using Claude Code, Cursor, Codex, and other AI coding assistants.",
+        "author": {
+            "@type": "Organization",
+            "name": "markjason"
+        },
+        "publisher": {
+            "@type": "Organization",
+            "name": "markjason",
+            "url": "https://markjason.sh"
+        },
+        "mainEntityOfPage": "https://markjason.sh/use-cases/ai-coding-editor"
+    }
+    </script>
+</head>
+<body>
+    <div class="grain"></div>
+    
+    <header class="header">
+        <nav class="nav">
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <div class="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/#features" class="nav-link">Features</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/#download" class="nav-link nav-link--cta">Download</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="about-main">
+        <article class="readme-content use-case-article">
+            <h1>Best Markdown Editor for AI Coding</h1>
+            
+            <p class="use-case-intro">
+                You're using <strong>Claude Code</strong>, <strong>Cursor</strong>, <strong>Codex</strong>, or another AI coding assistant. Your agents write code. But <em>you</em> still manage the prompts, configs, and specs. Here's why markjason is built for that workflow.
+            </p>
+            
+            <h2>The AI Coding Reality</h2>
+            
+            <p>When you're vibing with AI coding agents, your day looks something like this:</p>
+            
+            <ul>
+                <li>Write prompts in <code>AGENTS.md</code> or system instruction files</li>
+                <li>Edit configs like <code>mcp.json</code>, <code>.claude</code>, or <code>cursor-rules</code></li>
+                <li>Check environment variables in <code>.env</code> files</li>
+                <li>Review markdown docs that agents generate</li>
+                <li>Read specs and plans your AI assistant wrote</li>
+            </ul>
+            
+            <p>Notice what's <em>not</em> on that list? Writing code. The AI does that.</p>
+            
+            <p>Your job is managing the <strong>artifacts around the code</strong> — the human-readable files that guide the AI.</p>
+            
+            <h2>Why VS Code is Overkill</h2>
+            
+            <p>You probably have VS Code or Cursor open for your project. So why not use that for everything?</p>
+            
+            <p>Because every time you:</p>
+            
+            <ul>
+                <li>Double-click a random <code>.md</code> file on your desktop</li>
+                <li>Need to quickly check a config in another project</li>
+                <li>Want to review what an agent wrote without context-switching</li>
+            </ul>
+            
+            <p>...you're waiting for Electron to spin up, extensions to load, and workspaces to initialize.</p>
+            
+            <p>markjason opens in <strong>0.3 seconds</strong>. By the time VS Code is "loading extensions...", you've already read the file.</p>
+            
+            <p>See our <a href="/docs/markjason-vs-vscode">detailed VS Code comparison</a>.</p>
+            
+            <h2>Live File Sync: The Killer Feature</h2>
+            
+            <p>Here's what makes markjason perfect for AI coding:</p>
+            
+            <p><strong>When your agent edits a file, you see it instantly.</strong></p>
+            
+            <p>No refresh. No "file changed on disk, reload?" dialog. The content just updates.</p>
+            
+            <p>This matters because:</p>
+            
+            <ul>
+                <li><strong>Claude Code</strong> writes to files constantly as it works</li>
+                <li><strong>Cursor</strong> modifies files during Composer sessions</li>
+                <li><strong>Codex</strong> generates documentation and specs</li>
+            </ul>
+            
+            <p>You can have your <code>AGENTS.md</code> open in markjason while your agent works, watching the changes flow in. It's like pair programming, but you're the one reading.</p>
+            
+            <h2>Token Counting for Prompt Engineering</h2>
+            
+            <p>When you're crafting prompts, token count matters. Too long and you blow your context window. Too short and you lose important instructions.</p>
+            
+            <p>markjason shows token count with <kbd>⇧⌘I</kbd>. No extensions, no external tools, just instant feedback on your prompt length.</p>
+            
+            <h2>The Files AI Coding Creates</h2>
+            
+            <p>AI coding workflows generate specific file types that markjason handles natively:</p>
+            
+            <h3>Markdown Files</h3>
+            <ul>
+                <li><code>AGENTS.md</code> — <a href="/use-cases/agents-md-editor">agent behavior definitions</a></li>
+                <li><code>CLAUDE.md</code> — Claude-specific instructions</li>
+                <li><code>README.md</code> — project documentation</li>
+                <li><code>PLAN.md</code>, <code>SPEC.md</code> — agent-generated plans</li>
+                <li><code>.cursorrules</code> — Cursor AI instructions (markdown format)</li>
+            </ul>
+            
+            <h3>JSON Configs</h3>
+            <ul>
+                <li><code>mcp.json</code> — Model Context Protocol config</li>
+                <li><code>.claude</code> — Claude project settings</li>
+                <li><code>package.json</code> — Node.js dependencies</li>
+                <li><code>tsconfig.json</code> — TypeScript configuration</li>
+            </ul>
+            
+            <h3>Environment Files</h3>
+            <ul>
+                <li><code>.env</code> — API keys, secrets, configuration</li>
+                <li><code>.env.local</code>, <code>.env.development</code> — environment variants</li>
+            </ul>
+            
+            <p>That's the complete set of human-editable files in most AI-assisted projects. markjason does all three, with zero bloat.</p>
+            
+            <h2>Workflows That Make Sense</h2>
+            
+            <h3>The "Check the Config" Flow</h3>
+            <ol>
+                <li>Agent says "I updated mcp.json"</li>
+                <li>You press <kbd>⌘Space</kbd>, type "mcp", hit Enter</li>
+                <li>markjason opens instantly with validated JSON</li>
+                <li>You confirm the change, close the file</li>
+            </ol>
+            <p>Total time: 2 seconds. With VS Code: 8+ seconds.</p>
+            
+            <h3>The "Refine the Prompt" Flow</h3>
+            <ol>
+                <li>Open <code>AGENTS.md</code> in markjason</li>
+                <li>Edit the agent instructions</li>
+                <li>Check token count with <kbd>⇧⌘I</kbd></li>
+                <li>Save automatically</li>
+                <li>Agent picks up changes immediately</li>
+            </ol>
+            
+            <h3>The "Watch the Agent Work" Flow</h3>
+            <ol>
+                <li>Open a spec file in markjason</li>
+                <li>Tell your agent to write the implementation plan</li>
+                <li>Watch the content appear in real-time</li>
+                <li>Toggle to read mode (<kbd>⌘E</kbd>) for formatted preview</li>
+            </ol>
+            
+            <h2>What About Obsidian?</h2>
+            
+            <p>Obsidian is great for personal knowledge management — building a second brain with linked notes and graphs.</p>
+            
+            <p>But for AI coding, Obsidian has friction:</p>
+            
+            <ul>
+                <li>Files need to be in a vault</li>
+                <li>No JSON support</li>
+                <li>No .env support</li>
+                <li>Heavier memory footprint (Electron-based)</li>
+            </ul>
+            
+            <p>Use Obsidian for notes. Use markjason for code workflow files. See our <a href="/docs/markjason-vs-obsidian">detailed Obsidian comparison</a>.</p>
+            
+            <h2>The Setup</h2>
+            
+            <ol>
+                <li><a href="/#download">Download markjason</a></li>
+                <li>Right-click any <code>.md</code> file → Get Info → Open with → markjason → Change All</li>
+                <li>Repeat for <code>.json</code> and <code>.env</code></li>
+                <li>Now double-clicking these files opens markjason instantly</li>
+            </ol>
+            
+            <p>Your AI coding workflow just got faster.</p>
+            
+            <h2>Supported AI Coding Tools</h2>
+            
+            <p>markjason works great with:</p>
+            
+            <ul>
+                <li><strong>Claude Code</strong> — Anthropic's CLI coding assistant</li>
+                <li><strong>Cursor</strong> — AI-first code editor</li>
+                <li><strong>Codex</strong> — OpenAI's code generation</li>
+                <li><strong>GitHub Copilot Workspace</strong> — AI-powered development</li>
+                <li><strong>Aider</strong> — AI pair programming in terminal</li>
+                <li><strong>Continue.dev</strong> — Open source AI coding assistant</li>
+            </ul>
+            
+            <p>Any tool that edits files and expects you to review markdown, JSON, or configs.</p>
+            
+            <div class="use-case-cta">
+                <a href="/#download" class="btn btn-primary">Download markjason</a>
+                <p class="cta-note">Free. Native macOS. Built for AI coding.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-mark">#</span><span class="logo-brace">{</span><span class="logo-brace">}</span>
+                <span class="footer-name">markjason</span>
+            </div>
+            <p class="footer-tagline">Code is cheap. Show me the prompt.</p>
+            
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/faq">FAQ</a>
+                <a href="/#download">Download</a>
+                <a href="https://github.com/gijsverheijke/markjason-landing">GitHub</a>
+            </nav>
+            
+            <p class="footer-copy">No cookies. No analytics. We literally don't know you're here.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    
+    <style>
+        .use-case-article {
+            max-width: 800px;
+        }
+        
+        .use-case-intro {
+            font-size: 1.2em;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+        
+        h2 {
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+        
+        h3 {
+            margin-top: 1.5rem;
+            margin-bottom: 0.75rem;
+            color: var(--accent-md);
+        }
+        
+        p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+            line-height: 1.7;
+        }
+        
+        ul, ol {
+            margin: 1rem 0;
+            padding-left: 1.5rem;
+            color: var(--text-secondary);
+        }
+        
+        li {
+            margin: 0.5rem 0;
+            line-height: 1.6;
+        }
+        
+        code {
+            background: rgba(255,255,255,0.1);
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9em;
+            color: var(--syntax-code);
+        }
+        
+        kbd {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85em;
+        }
+        
+        a {
+            color: var(--accent-md);
+        }
+        
+        a:hover {
+            text-decoration: underline;
+        }
+        
+        strong {
+            color: var(--text-primary);
+        }
+        
+        em {
+            color: var(--text-secondary);
+            font-style: italic;
+        }
+        
+        .use-case-cta {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: rgba(255,255,255,0.03);
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+        
+        .cta-note {
+            margin-top: 0.75rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+    </style>
+</body>
+</html>

@@ -1,0 +1,6 @@
+# markjason.sh robots.txt
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://markjason.sh/sitemap.xml

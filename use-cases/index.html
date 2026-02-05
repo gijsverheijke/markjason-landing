@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Use Cases — markjason | Fast Editor for AI Coding Workflows</title>
+    <meta name="description" content="Discover how markjason fits into your workflow. From AI coding with Claude Code to editing AGENTS.md files, see why developers choose markjason.">
+    <link rel="canonical" href="https://markjason.sh/use-cases/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Use Cases — markjason">
+    <meta property="og:description" content="Discover how markjason fits into your workflow. From AI coding to editing AGENTS.md files.">
+    <meta property="og:image" content="https://markjason.sh/og-image.png">
+    <meta property="og:url" content="https://markjason.sh/use-cases/">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <div class="grain"></div>
+    
+    <header class="header">
+        <nav class="nav">
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <div class="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/#features" class="nav-link">Features</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/#download" class="nav-link nav-link--cta">Download</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="about-main">
+        <article class="readme-content">
+            <h1>Use Cases</h1>
+            
+            <p class="intro">markjason is built for specific workflows. Here's where it shines.</p>
+            
+            <div class="use-case-cards">
+                <a href="/use-cases/ai-coding-editor" class="use-case-card">
+                    <div class="card-icon">🤖</div>
+                    <h2>AI Coding Workflows</h2>
+                    <p>Using Claude Code, Cursor, Codex, or other AI coding assistants? markjason's live file sync and instant startup make it the perfect companion.</p>
+                    <span class="card-link">Learn more →</span>
+                </a>
+                
+                <a href="/use-cases/agents-md-editor" class="use-case-card">
+                    <div class="card-icon">📝</div>
+                    <h2>AGENTS.md Editor</h2>
+                    <p>Edit AI agent instructions with instant preview, token counting, and visual hierarchy. The fastest way to tune your agents.</p>
+                    <span class="card-link">Learn more →</span>
+                </a>
+            </div>
+            
+            <h2>More Everyday Uses</h2>
+            
+            <ul class="use-list">
+                <li>
+                    <strong>Reading documentation</strong> — Double-click any README.md and have it rendered instantly
+                </li>
+                <li>
+                    <strong>Editing configs</strong> — JSON files with real-time validation and collapsible tree view
+                </li>
+                <li>
+                    <strong>Managing secrets</strong> — .env files with one-click copy for keys and values
+                </li>
+                <li>
+                    <strong>Reviewing agent output</strong> — Watch files update in real-time as AI writes
+                </li>
+                <li>
+                    <strong>Sharing specs</strong> — Copy rendered markdown as images for non-technical colleagues
+                </li>
+                <li>
+                    <strong>Prompt engineering</strong> — Token counting tells you exactly how long your prompts are
+                </li>
+            </ul>
+            
+            <div class="cta-section">
+                <h2>See How markjason Compares</h2>
+                <div class="comparison-links">
+                    <a href="/docs/markjason-vs-vscode" class="comparison-link">
+                        <strong>vs VS Code</strong>
+                        <span>0.3s launch vs 3-5s</span>
+                    </a>
+                    <a href="/docs/markjason-vs-obsidian" class="comparison-link">
+                        <strong>vs Obsidian</strong>
+                        <span>No vault required</span>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="download-cta">
+                <a href="/#download" class="btn btn-primary">Download markjason</a>
+                <p class="cta-note">Free. Native macOS. ~100MB RAM.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-mark">#</span><span class="logo-brace">{</span><span class="logo-brace">}</span>
+                <span class="footer-name">markjason</span>
+            </div>
+            <p class="footer-tagline">Code is cheap. Show me the prompt.</p>
+            
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/faq">FAQ</a>
+                <a href="/#download">Download</a>
+                <a href="https://github.com/gijsverheijke/markjason-landing">GitHub</a>
+            </nav>
+            
+            <p class="footer-copy">No cookies. No analytics. We literally don't know you're here.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    
+    <style>
+        .intro {
+            font-size: 1.25em;
+            color: var(--text-secondary);
+            margin-bottom: 2.5rem;
+        }
+        
+        .use-case-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .use-case-card {
+            display: block;
+            padding: 2rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .use-case-card:hover {
+            border-color: var(--accent-md);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .card-icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+        
+        .use-case-card h2 {
+            font-size: 1.25rem;
+            color: var(--text-primary);
+            margin-bottom: 0.75rem;
+        }
+        
+        .use-case-card p {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            line-height: 1.6;
+            margin-bottom: 1rem;
+        }
+        
+        .card-link {
+            color: var(--accent-md);
+            font-weight: 500;
+        }
+        
+        h2 {
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .use-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .use-list li {
+            padding: 1rem;
+            margin-bottom: 0.75rem;
+            background: var(--bg-secondary);
+            border-radius: 8px;
+            border-left: 3px solid var(--accent-md);
+        }
+        
+        .use-list li strong {
+            color: var(--text-primary);
+        }
+        
+        .cta-section {
+            margin-top: 3rem;
+            padding: 2rem;
+            background: rgba(255,255,255,0.02);
+            border-radius: 12px;
+            border: 1px solid var(--border);
+        }
+        
+        .cta-section h2 {
+            margin-top: 0;
+            margin-bottom: 1.5rem;
+            text-align: center;
+        }
+        
+        .comparison-links {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+        
+        .comparison-link {
+            display: flex;
+            flex-direction: column;
+            padding: 1rem 2rem;
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            border-radius: 8px;
+            text-decoration: none;
+            text-align: center;
+            transition: all 0.2s ease;
+        }
+        
+        .comparison-link:hover {
+            border-color: var(--accent-md);
+        }
+        
+        .comparison-link strong {
+            color: var(--text-primary);
+            font-size: 1.1rem;
+        }
+        
+        .comparison-link span {
+            color: var(--text-muted);
+            font-size: 0.85rem;
+            margin-top: 0.25rem;
+        }
+        
+        .download-cta {
+            margin-top: 3rem;
+            text-align: center;
+        }
+        
+        .cta-note {
+            margin-top: 0.75rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+    </style>
+</body>
+</html>

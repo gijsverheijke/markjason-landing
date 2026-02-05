@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Comparisons — markjason vs Other Editors</title>
+    <meta name="description" content="How markjason compares to VS Code, Obsidian, and other editors. Find the right tool for your markdown, JSON, and .env workflow.">
+    <link rel="canonical" href="https://markjason.sh/docs/">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="icon" href="../favicon.svg" type="image/svg+xml">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="Comparisons — markjason vs Other Editors">
+    <meta property="og:description" content="How markjason compares to VS Code, Obsidian, and other editors.">
+    <meta property="og:image" content="https://markjason.sh/og-image.png">
+    <meta property="og:url" content="https://markjason.sh/docs/">
+    <meta property="og:type" content="website">
+</head>
+<body>
+    <div class="grain"></div>
+    
+    <header class="header">
+        <nav class="nav">
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <div class="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/#features" class="nav-link">Features</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/#download" class="nav-link nav-link--cta">Download</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="about-main">
+        <article class="readme-content">
+            <h1>Comparisons</h1>
+            
+            <p class="intro">markjason is a focused tool. Here's how it compares to popular alternatives — and when to use what.</p>
+            
+            <div class="comparison-cards">
+                <a href="/docs/markjason-vs-vscode" class="comparison-card">
+                    <div class="card-versus">
+                        <span class="card-logo">#{ }</span>
+                        <span class="vs">vs</span>
+                        <span class="competitor">VS Code</span>
+                    </div>
+                    <div class="card-summary">
+                        <div class="summary-item">
+                            <span class="label">Launch time</span>
+                            <span class="value">0.3s vs 3-5s</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="label">RAM usage</span>
+                            <span class="value">~100MB vs 500MB+</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="label">Framework</span>
+                            <span class="value">Native vs Electron</span>
+                        </div>
+                    </div>
+                    <p class="card-verdict">Use VS Code for coding. Use markjason for markdown, JSON, and .env files.</p>
+                    <span class="card-link">Read full comparison →</span>
+                </a>
+                
+                <a href="/docs/markjason-vs-obsidian" class="comparison-card">
+                    <div class="card-versus">
+                        <span class="card-logo">#{ }</span>
+                        <span class="vs">vs</span>
+                        <span class="competitor">Obsidian</span>
+                    </div>
+                    <div class="card-summary">
+                        <div class="summary-item">
+                            <span class="label">Purpose</span>
+                            <span class="value">Fast editing vs Knowledge base</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="label">JSON support</span>
+                            <span class="value">✅ Built-in vs ❌ None</span>
+                        </div>
+                        <div class="summary-item">
+                            <span class="label">Vault required</span>
+                            <span class="value">No vs Yes</span>
+                        </div>
+                    </div>
+                    <p class="card-verdict">Use Obsidian for note-taking. Use markjason for AI coding workflows.</p>
+                    <span class="card-link">Read full comparison →</span>
+                </a>
+            </div>
+            
+            <h2>The TL;DR</h2>
+            
+            <table class="summary-table">
+                <thead>
+                    <tr>
+                        <th></th>
+                        <th>markjason</th>
+                        <th>VS Code</th>
+                        <th>Obsidian</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Best for</strong></td>
+                        <td>AI coding workflows</td>
+                        <td>Full development</td>
+                        <td>Knowledge management</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Launch time</strong></td>
+                        <td class="highlight">0.3s</td>
+                        <td>3-5s</td>
+                        <td>2-4s</td>
+                    </tr>
+                    <tr>
+                        <td><strong>RAM</strong></td>
+                        <td class="highlight">~100MB</td>
+                        <td>500MB+</td>
+                        <td>300MB+</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Markdown</strong></td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>✅</td>
+                    </tr>
+                    <tr>
+                        <td><strong>JSON</strong></td>
+                        <td>✅</td>
+                        <td>✅</td>
+                        <td>❌</td>
+                    </tr>
+                    <tr>
+                        <td><strong>.env</strong></td>
+                        <td>✅</td>
+                        <td>⚠️ Extension</td>
+                        <td>❌</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Live file sync</strong></td>
+                        <td class="highlight">✅ Built-in</td>
+                        <td>⚠️ Manual</td>
+                        <td>⚠️ Vault only</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Framework</strong></td>
+                        <td>Native Swift</td>
+                        <td>Electron</td>
+                        <td>Electron</td>
+                    </tr>
+                </tbody>
+            </table>
+            
+            <h2>Philosophy</h2>
+            
+            <p>VS Code and Obsidian are powerful because they do <em>everything</em>. Plugins for days. Features for every use case.</p>
+            
+            <p>markjason is powerful because it does <strong>three things</strong> — markdown, JSON, and .env — and does them <em>extremely well</em>.</p>
+            
+            <p>Different tools for different jobs. Use all three.</p>
+            
+            <div class="download-cta">
+                <a href="/#download" class="btn btn-primary">Download markjason</a>
+                <p class="cta-note">Free. Native macOS. No Electron.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-mark">#</span><span class="logo-brace">{</span><span class="logo-brace">}</span>
+                <span class="footer-name">markjason</span>
+            </div>
+            <p class="footer-tagline">Code is cheap. Show me the prompt.</p>
+            
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/faq">FAQ</a>
+                <a href="/#download">Download</a>
+                <a href="https://github.com/gijsverheijke/markjason-landing">GitHub</a>
+            </nav>
+            
+            <p class="footer-copy">No cookies. No analytics. We literally don't know you're here.</p>
+        </div>
+    </footer>
+
+    <script src="../script.js"></script>
+    
+    <style>
+        .intro {
+            font-size: 1.2em;
+            color: var(--text-secondary);
+            margin-bottom: 2.5rem;
+        }
+        
+        .comparison-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 3rem;
+        }
+        
+        .comparison-card {
+            display: block;
+            padding: 2rem;
+            background: var(--bg-secondary);
+            border: 1px solid var(--border);
+            border-radius: 12px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .comparison-card:hover {
+            border-color: var(--accent-md);
+            transform: translateY(-4px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+        }
+        
+        .card-versus {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+            font-family: 'JetBrains Mono', monospace;
+        }
+        
+        .card-logo {
+            color: var(--accent-md);
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .vs {
+            color: var(--text-muted);
+            font-size: 1rem;
+        }
+        
+        .competitor {
+            color: var(--text-primary);
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+        
+        .card-summary {
+            margin-bottom: 1.5rem;
+        }
+        
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.5rem 0;
+            border-bottom: 1px solid var(--border-subtle);
+            font-size: 0.9rem;
+        }
+        
+        .summary-item .label {
+            color: var(--text-muted);
+        }
+        
+        .summary-item .value {
+            color: var(--text-secondary);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85rem;
+        }
+        
+        .card-verdict {
+            color: var(--text-secondary);
+            font-size: 0.95rem;
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+        
+        .card-link {
+            color: var(--accent-md);
+            font-weight: 500;
+        }
+        
+        h2 {
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+        }
+        
+        .summary-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            font-size: 0.9rem;
+        }
+        
+        .summary-table th,
+        .summary-table td {
+            padding: 0.75rem 1rem;
+            text-align: left;
+            border-bottom: 1px solid var(--border);
+        }
+        
+        .summary-table th {
+            background: var(--bg-elevated);
+            font-weight: 600;
+            color: var(--text-primary);
+        }
+        
+        .summary-table td {
+            color: var(--text-secondary);
+        }
+        
+        .summary-table td.highlight {
+            color: var(--accent-md);
+            font-weight: 500;
+        }
+        
+        .summary-table tr:hover {
+            background: rgba(255,255,255,0.02);
+        }
+        
+        p {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            margin-bottom: 1rem;
+        }
+        
+        em {
+            color: var(--text-muted);
+        }
+        
+        strong {
+            color: var(--text-primary);
+        }
+        
+        .download-cta {
+            margin-top: 3rem;
+            text-align: center;
+        }
+        
+        .cta-note {
+            margin-top: 0.75rem;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        @media (max-width: 768px) {
+            .comparison-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</body>
+</html>

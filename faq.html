@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQ — markjason | Common Questions About the Fast Markdown Editor</title>
+    <meta name="description" content="Frequently asked questions about markjason — the lightning-fast native macOS editor for .md, .json, and .env files. Built for AI coding workflows.">
+    <link rel="canonical" href="https://markjason.sh/faq">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="FAQ — markjason">
+    <meta property="og:description" content="Frequently asked questions about markjason — the fast native macOS editor for markdown, JSON, and .env files.">
+    <meta property="og:image" content="https://markjason.sh/og-image.png">
+    <meta property="og:url" content="https://markjason.sh/faq">
+    <meta property="og:type" content="website">
+    
+    <!-- JSON-LD FAQ Schema -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "What file types does markjason support?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "markjason supports .md (Markdown), .json (JSON), and .env (environment variable) files. That's it — no other formats. This focus is intentional: do three things extremely well instead of everything poorly."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Is markjason free?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes, markjason is completely free. No subscription, no account required, no feature gates. Just download and use it."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does markjason work on Windows or Linux?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. markjason is a native macOS app built with SwiftUI. It requires macOS 14 (Sonoma) or later. There are no plans for Windows or Linux versions — the native approach is what makes it so fast."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "How fast is markjason compared to VS Code?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "markjason launches in about 0.3 seconds and uses ~100MB RAM. VS Code typically takes 2-5 seconds to launch and uses 500MB-1GB+ of RAM. markjason is native Swift; VS Code is Electron (Chromium-based)."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can markjason edit files or is it just a viewer?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "markjason is both a viewer and editor. Toggle between read and edit mode instantly with ⌘E. Changes save automatically."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "What is live file sync?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "markjason watches files for external changes. When another program (like an AI coding agent) edits a file you have open, markjason updates the view instantly. No manual refresh needed."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does markjason have a light mode?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Dark mode only. This is a deliberate choice for a developer-focused tool. We're not adding light mode."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I use markjason with Claude Code, Cursor, or Codex?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes! markjason was built specifically for AI coding workflows. Its live file sync means you see agent edits in real-time, and the instant launch means you can quickly check configs and prompts without waiting for a heavy IDE to load."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Does markjason track me or collect data?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "No. Zero analytics, zero tracking, zero telemetry. We don't know you exist. Your files stay on your machine."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Why doesn't markjason have plugins?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Plugins add complexity, slow things down, and create maintenance burden. markjason is intentionally minimal. If you need plugins, use VS Code or Obsidian — great tools for different purposes."
+                }
+            }
+        ]
+    }
+    </script>
+</head>
+<body>
+    <div class="grain"></div>
+    
+    <header class="header">
+        <nav class="nav">
+            <button class="hamburger" aria-label="Toggle menu" aria-expanded="false">
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+                <span class="hamburger-line"></span>
+            </button>
+            <div class="nav-links">
+                <a href="/" class="nav-link">Home</a>
+                <a href="/#features" class="nav-link">Features</a>
+                <a href="/about" class="nav-link">About</a>
+                <a href="/#download" class="nav-link nav-link--cta">Download</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="about-main">
+        <article class="readme-content faq-article">
+            <h1>Frequently Asked Questions</h1>
+            
+            <p class="faq-intro">Everything you might wonder about markjason. If your question isn't here, it might be because the answer is "we won't add that."</p>
+            
+            <section class="faq-section">
+                <h2>The Basics</h2>
+                
+                <div class="faq-item">
+                    <h3>What file types does markjason support?</h3>
+                    <p>markjason supports <code>.md</code> (Markdown), <code>.json</code> (JSON), and <code>.env</code> (environment variable) files. That's it — no other formats.</p>
+                    <p>This focus is intentional: do three things extremely well instead of everything poorly.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Is markjason free?</h3>
+                    <p>Yes, completely free. No subscription, no account required, no feature gates. Just <a href="/#download">download</a> and use it.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Does markjason work on Windows or Linux?</h3>
+                    <p>No. markjason is a native macOS app built with SwiftUI. It requires macOS 14 (Sonoma) or later.</p>
+                    <p>There are no plans for Windows or Linux versions — the native approach is what makes it so fast.</p>
+                </div>
+            </section>
+            
+            <section class="faq-section">
+                <h2>Performance</h2>
+                
+                <div class="faq-item">
+                    <h3>How fast is markjason compared to VS Code?</h3>
+                    <p>markjason launches in about <strong>0.3 seconds</strong> and uses ~100MB RAM.</p>
+                    <p>VS Code typically takes 2-5 seconds to launch and uses 500MB-1GB+ of RAM.</p>
+                    <p>The difference: markjason is native Swift; VS Code is Electron (Chromium-based). See our <a href="/docs/markjason-vs-vscode">detailed comparison</a>.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Why is markjason so fast?</h3>
+                    <p>Native Swift + SwiftUI. No JavaScript runtime, no Chromium, no Electron. The app does exactly what it needs to and nothing more.</p>
+                </div>
+            </section>
+            
+            <section class="faq-section">
+                <h2>Features</h2>
+                
+                <div class="faq-item">
+                    <h3>Can markjason edit files or is it just a viewer?</h3>
+                    <p>Both. Toggle between read and edit mode instantly with <kbd>⌘E</kbd>. Changes save automatically.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What is live file sync?</h3>
+                    <p>markjason watches files for external changes. When another program (like an AI coding agent) edits a file you have open, markjason updates the view instantly. No manual refresh needed.</p>
+                    <p>This is killer for <a href="/use-cases/ai-coding-editor">AI coding workflows</a> where agents constantly modify your files.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>How do I count tokens in a file?</h3>
+                    <p>Press <kbd>⇧⌘I</kbd> to see token count. Useful when crafting prompts for AI models.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Can I share markdown as an image?</h3>
+                    <p>Yes. Press <kbd>⇧⌘C</kbd> to copy the rendered markdown as an image. Great for sharing specs with non-technical colleagues.</p>
+                </div>
+            </section>
+            
+            <section class="faq-section">
+                <h2>Anti-Features</h2>
+                
+                <div class="faq-item">
+                    <h3>Does markjason have a light mode?</h3>
+                    <p>No. Dark mode only. This is a deliberate choice for a developer-focused tool.</p>
+                    <p>We're not adding light mode. Seek help.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Why doesn't markjason have plugins?</h3>
+                    <p>Plugins add complexity, slow things down, and create maintenance burden. markjason is intentionally minimal.</p>
+                    <p>If you need plugins, use VS Code or <a href="/docs/markjason-vs-obsidian">Obsidian</a> — great tools for different purposes.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Will you add Git integration?</h3>
+                    <p>No. That's what git is for. markjason stays focused.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What about cloud sync?</h3>
+                    <p>No built-in sync. Your files live on your computer. Use git, iCloud, Dropbox, or whatever you prefer.</p>
+                </div>
+            </section>
+            
+            <section class="faq-section">
+                <h2>AI & Coding Workflows</h2>
+                
+                <div class="faq-item">
+                    <h3>Can I use markjason with Claude Code, Cursor, or Codex?</h3>
+                    <p>Yes! markjason was <a href="/use-cases/ai-coding-editor">built specifically for AI coding workflows</a>.</p>
+                    <p>Its live file sync means you see agent edits in real-time, and the instant launch means you can quickly check configs and prompts without waiting for a heavy IDE to load.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>What's an AGENTS.md file?</h3>
+                    <p><a href="/use-cases/agents-md-editor">AGENTS.md</a> is a convention for defining AI agent behavior in a project. It's a markdown file that tells coding agents how to work with your codebase. markjason makes editing these files fast and pleasant.</p>
+                </div>
+            </section>
+            
+            <section class="faq-section">
+                <h2>Privacy</h2>
+                
+                <div class="faq-item">
+                    <h3>Does markjason track me or collect data?</h3>
+                    <p>No. Zero analytics, zero tracking, zero telemetry. We literally don't know you exist. Your files stay on your machine.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h3>Do I need to create an account?</h3>
+                    <p>No. There's no account, no login, no sign-up. Download, open, use.</p>
+                </div>
+            </section>
+            
+            <div class="faq-cta">
+                <h2>Ready to try it?</h2>
+                <a href="/#download" class="btn btn-primary">Download markjason</a>
+                <p class="cta-note">Free. Native macOS. ~100MB RAM.</p>
+            </div>
+        </article>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <span class="logo-mark">#</span><span class="logo-brace">{</span><span class="logo-brace">}</span>
+                <span class="footer-name">markjason</span>
+            </div>
+            <p class="footer-tagline">Code is cheap. Show me the prompt.</p>
+            
+            <nav class="footer-nav">
+                <a href="/">Home</a>
+                <a href="/about">About</a>
+                <a href="/faq">FAQ</a>
+                <a href="/#download">Download</a>
+                <a href="https://github.com/gijsverheijke/markjason-landing">GitHub</a>
+            </nav>
+            
+            <p class="footer-copy">No cookies. No analytics. We literally don't know you're here.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+    
+    <style>
+        .faq-article {
+            max-width: 800px;
+        }
+        
+        .faq-intro {
+            font-size: 1.15em;
+            color: var(--text-secondary);
+            margin-bottom: 2.5rem;
+        }
+        
+        .faq-section {
+            margin-bottom: 3rem;
+        }
+        
+        .faq-section h2 {
+            font-size: 1.5rem;
+            color: var(--accent-md);
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+        
+        .faq-item {
+            margin-bottom: 2rem;
+        }
+        
+        .faq-item h3 {
+            font-size: 1.1rem;
+            color: var(--text-primary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .faq-item p {
+            color: var(--text-secondary);
+            margin-bottom: 0.5rem;
+        }
+        
+        .faq-item code {
+            background: rgba(255,255,255,0.1);
+            padding: 0.15rem 0.4rem;
+            border-radius: 3px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.9em;
+        }
+        
+        .faq-item kbd {
+            background: var(--bg-elevated);
+            border: 1px solid var(--border);
+            padding: 0.2rem 0.5rem;
+            border-radius: 4px;
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 0.85em;
+        }
+        
+        .faq-item a {
+            color: var(--accent-md);
+        }
+        
+        .faq-item a:hover {
+            text-decoration: underline;
+        }
+        
+        .faq-cta {
+            margin-top: 4rem;
+            padding: 2rem;
+            background: rgba(255,255,255,0.03);
+            border-radius: 12px;
+            text-align: center;
+            border: 1px solid var(--border);
+        }
+        
+        .faq-cta h2 {
+            margin-bottom: 1rem;
+        }
+        
+        .cta-note {
+            margin-top: 0.75rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+    </style>
+</body>
+</html>
