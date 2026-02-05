@@ -301,6 +301,21 @@ body {
     font-family: var(--font-mono);
 }
 
+.download-counter {
+    font-size: 0.75rem;
+    color: var(--accent-green);
+    font-family: var(--font-mono);
+    opacity: 0.8;
+}
+
+.download-counter-large {
+    font-size: 0.9rem;
+    color: var(--accent-green);
+    font-family: var(--font-mono);
+    margin-top: var(--space-sm);
+    opacity: 0.9;
+}
+
 /* Buttons */
 .btn {
     display: inline-flex;

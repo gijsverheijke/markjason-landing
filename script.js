@@ -5,6 +5,39 @@
     'use strict';
 
     // ============================================
+    // Download counter from GitHub API
+    // ============================================
+    async function fetchDownloadCount() {
+        try {
+            const response = await fetch('https://api.github.com/repos/gijsverheijke/markjason-landing/releases');
+            const releases = await response.json();
+            
+            let totalDownloads = 0;
+            releases.forEach(release => {
+                release.assets.forEach(asset => {
+                    if (asset.name.endsWith('.dmg')) {
+                        totalDownloads += asset.download_count;
+                    }
+                });
+            });
+            
+            // Update counters
+            const counter = document.getElementById('download-counter');
+            const counterLarge = document.getElementById('download-counter-large');
+            
+            if (totalDownloads > 0) {
+                const text = `${totalDownloads.toLocaleString()} download${totalDownloads !== 1 ? 's' : ''}`;
+                if (counter) counter.textContent = `⬇ ${text}`;
+                if (counterLarge) counterLarge.textContent = `${text} and counting`;
+            }
+        } catch (e) {
+            // Silently fail - counter just won't show
+            console.log('Could not fetch download count:', e);
+        }
+    }
+    fetchDownloadCount();
+
+    // ============================================
     // Floating particles background
     // ============================================
     function createParticles() {
