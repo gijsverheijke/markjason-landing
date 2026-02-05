@@ -99,7 +99,6 @@ body {
     margin: 0 auto;
     display: flex;
     justify-content: flex-end;
-    gap: var(--space-lg);
     align-items: center;
 }
 
@@ -145,6 +144,47 @@ body {
 .nav-link--cta:hover {
     background: var(--bg-hover);
     border-color: var(--text-muted);
+}
+
+/* Hamburger Menu */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5px;
+    width: 32px;
+    height: 32px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 4px;
+    z-index: 101;
+}
+
+.hamburger-line {
+    width: 100%;
+    height: 2px;
+    background: var(--text-primary);
+    transition: all 0.3s var(--ease-out);
+    border-radius: 1px;
+}
+
+.hamburger.active .hamburger-line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active .hamburger-line:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active .hamburger-line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+}
+
+.nav-links {
+    display: flex;
+    gap: var(--space-lg);
+    align-items: center;
 }
 
 /* ============================================
@@ -932,23 +972,44 @@ body {
 
 @media (max-width: 768px) {
     .header {
-        position: relative;
         padding: var(--space-sm) var(--space-md);
     }
     
-    .nav {
-        flex-wrap: wrap;
-        justify-content: center;
-        gap: var(--space-sm) var(--space-md);
+    .hamburger {
+        display: flex;
+    }
+    
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        background: rgba(10, 10, 11, 0.95);
+        backdrop-filter: blur(20px);
+        padding: var(--space-md);
+        gap: var(--space-sm);
+        border-bottom: 1px solid var(--border-subtle);
+    }
+    
+    .nav-links.active {
+        display: flex;
     }
     
     .nav-link {
-        font-size: 0.8rem;
+        padding: var(--space-sm) 0;
+        font-size: 1rem;
+    }
+    
+    .nav-link--cta {
+        text-align: center;
+        margin-top: var(--space-sm);
     }
     
     .hero {
         padding: var(--space-xl) var(--space-md);
-        padding-top: var(--space-lg);
+        padding-top: calc(var(--space-xl) + 60px);
     }
     
     .hero-brand .logo {

@@ -246,6 +246,28 @@
         });
     }
 
+    // Hamburger menu toggle
+    const hamburger = document.querySelector('.hamburger');
+    const navLinks = document.querySelector('.nav-links');
+    
+    if (hamburger && navLinks) {
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+            hamburger.setAttribute('aria-expanded', 
+                hamburger.classList.contains('active'));
+        });
+        
+        // Close menu when clicking a link
+        navLinks.querySelectorAll('.nav-link').forEach(link => {
+            link.addEventListener('click', () => {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+                hamburger.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
+
     // Console Easter egg for developers
     console.log('%c# { } markjason', 'font-size: 24px; font-weight: bold; color: #22c55e;');
     console.log('%cYou\'re inspecting a landing page. Classic developer move. 😏', 'color: #a1a1aa;');
