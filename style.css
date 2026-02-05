@@ -151,26 +151,27 @@ body {
     display: none;
     flex-direction: column;
     justify-content: center;
-    gap: 5px;
-    width: 32px;
-    height: 32px;
-    background: none;
-    border: none;
+    gap: 6px;
+    width: 44px;
+    height: 44px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border);
+    border-radius: 8px;
     cursor: pointer;
-    padding: 4px;
+    padding: 10px;
     z-index: 101;
 }
 
 .hamburger-line {
     width: 100%;
-    height: 2px;
+    height: 3px;
     background: var(--text-primary);
     transition: all 0.3s var(--ease-out);
-    border-radius: 1px;
+    border-radius: 2px;
 }
 
 .hamburger.active .hamburger-line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
+    transform: rotate(45deg) translate(6px, 6px);
 }
 
 .hamburger.active .hamburger-line:nth-child(2) {
@@ -178,7 +179,7 @@ body {
 }
 
 .hamburger.active .hamburger-line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
+    transform: rotate(-45deg) translate(6px, -6px);
 }
 
 .nav-links {
