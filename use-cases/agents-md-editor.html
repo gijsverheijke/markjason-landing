@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AGENTS.md Editor — The Best Way to Edit AI Agent Instructions</title>
-    <meta name="description" content="Edit AGENTS.md files with markjason — the fast native editor for AI agent instructions. Live preview, token counting, instant startup. Built for Claude Code, Cursor, and Codex workflows.">
+    <title>AGENTS.md Editor | markjason</title>
+    <meta name="description" content="Edit AGENTS.md and CLAUDE.md files quickly. Live preview, token counting, instant startup. Built for prompt engineering.">
     <link rel="canonical" href="https://markjason.sh/use-cases/agents-md-editor">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,29 +12,20 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
     
-    <!-- Open Graph -->
-    <meta property="og:title" content="AGENTS.md Editor — markjason">
-    <meta property="og:description" content="The best editor for AGENTS.md files. Fast, native, with live preview and token counting.">
-    <meta property="og:image" content="https://markjason.sh/og-image.png">
+    <meta property="og:title" content="AGENTS.md Editor | markjason">
+    <meta property="og:description" content="Edit AGENTS.md and CLAUDE.md files quickly. Live preview, token counting.">
+    <meta property="og:image" content="https://markjason.sh/og-image.png?v=2">
     <meta property="og:url" content="https://markjason.sh/use-cases/agents-md-editor">
     <meta property="og:type" content="article">
     
-    <!-- JSON-LD Article Schema -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "AGENTS.md Editor — The Best Way to Edit AI Agent Instructions",
-        "description": "How to edit AGENTS.md files efficiently with markjason for Claude Code, Cursor, Codex, and other AI coding assistants.",
-        "author": {
-            "@type": "Organization",
-            "name": "markjason"
-        },
-        "publisher": {
-            "@type": "Organization",
-            "name": "markjason",
-            "url": "https://markjason.sh"
-        },
+        "headline": "AGENTS.md Editor",
+        "description": "A fast editor for AI agent instruction files.",
+        "author": { "@type": "Person", "name": "Gijs Verheijke" },
+        "publisher": { "@type": "Organization", "name": "markjason", "url": "https://markjason.sh" },
         "mainEntityOfPage": "https://markjason.sh/use-cases/agents-md-editor"
     }
     </script>
@@ -63,197 +54,59 @@
             <h1>AGENTS.md Editor</h1>
             
             <p class="use-case-intro">
-                <code>AGENTS.md</code> is becoming the standard way to tell AI coding agents how to work with your project. Here's how markjason makes editing these files fast and effective.
+                <code>AGENTS.md</code> tells AI coding agents how to work with your project. It's the most important file in your repo that nobody talks about.
             </p>
             
-            <h2>What is AGENTS.md?</h2>
+            <h2>What Goes in AGENTS.md</h2>
             
-            <p><code>AGENTS.md</code> is a markdown file that defines how AI coding assistants should behave in your project. It's like a README, but for robots.</p>
-            
-            <p>Different tools have their own conventions:</p>
+            <p>Basically everything an AI needs to know about your project:</p>
             
             <ul>
-                <li><code>AGENTS.md</code> — Generic AI agent instructions (growing standard)</li>
-                <li><code>CLAUDE.md</code> — Claude-specific project instructions</li>
-                <li><code>.cursorrules</code> — Cursor AI rules (markdown format)</li>
-                <li><code>.github/copilot-instructions.md</code> — GitHub Copilot guidance</li>
+                <li>Tech stack and architecture</li>
+                <li>Coding conventions</li>
+                <li>Things to avoid</li>
+                <li>Common commands</li>
+                <li>File structure</li>
             </ul>
             
-            <p>The content is similar: project context, coding conventions, file structure, and instructions the AI should follow.</p>
-            
-            <h2>Why AGENTS.md Matters</h2>
-            
-            <p>AI coding assistants are only as good as their context. A well-written <code>AGENTS.md</code> can:</p>
+            <p>Different tools call it different things:</p>
             
             <ul>
-                <li><strong>Set coding standards</strong> — naming conventions, patterns, style</li>
-                <li><strong>Explain architecture</strong> — how the codebase is organized</li>
-                <li><strong>Define boundaries</strong> — what the agent should and shouldn't touch</li>
-                <li><strong>Provide context</strong> — domain knowledge, business logic</li>
-                <li><strong>Speed up onboarding</strong> — new agents (and humans) get up to speed fast</li>
+                <li><code>AGENTS.md</code> or <code>CLAUDE.md</code> for Claude Code</li>
+                <li><code>.cursorrules</code> for Cursor</li>
+                <li><code>.github/copilot-instructions.md</code> for Copilot</li>
             </ul>
             
-            <p>This is prompt engineering at the project level.</p>
+            <p>Same idea. Markdown file with instructions for the AI.</p>
             
-            <h2>Example AGENTS.md Structure</h2>
+            <h2>Why I Use markjason for This</h2>
             
-            <p>Here's a typical structure:</p>
+            <p>I edit my agent instructions constantly. Like, dozens of times a day when tuning a new project.</p>
             
-            <pre><code># AGENTS.md
-
-## Project Overview
-Brief description of what this project does.
-
-## Tech Stack
-- Language: TypeScript
-- Framework: Next.js 14
-- Database: PostgreSQL with Drizzle ORM
-
-## Architecture
-- `/app` — Next.js App Router pages
-- `/lib` — Shared utilities and configs
-- `/components` — React components
-
-## Coding Conventions
-- Use functional components with hooks
-- Prefer named exports over default
-- Write tests for new features
-
-## Things to Avoid
-- Don't modify migrations directly
-- Don't expose API keys in client code
-- Don't use `any` type
-
-## Commands
-- `pnpm dev` — Start development server
-- `pnpm test` — Run tests
-- `pnpm db:push` — Push schema changes</code></pre>
+            <p>Three things matter:</p>
             
-            <h2>Why markjason for AGENTS.md</h2>
+            <p><strong>Speed.</strong> Opens in 0.3 seconds. I'm not waiting for VS Code to load just to add a line.</p>
             
-            <h3>Instant Read/Edit Toggle</h3>
+            <p><strong>Token count.</strong> <kbd>⇧⌘I</kbd> shows tokens. Every word in AGENTS.md is a word that's not available for actual code context. Keep it tight.</p>
             
-            <p>Press <kbd>⌘E</kbd> to switch between raw markdown and rendered preview. Perfect for:</p>
+            <p><strong>Live sync.</strong> Sometimes my agent modifies its own instructions. I see those changes instantly without refreshing.</p>
             
-            <ul>
-                <li>Checking how your instructions will look</li>
-                <li>Spotting formatting issues</li>
-                <li>Reviewing before committing</li>
-            </ul>
+            <h2>Quick Tips</h2>
             
-            <h3>Token Counting</h3>
+            <p><strong>Be specific, not verbose.</strong></p>
             
-            <p>AI models have context limits. A bloated <code>AGENTS.md</code> wastes tokens that could go to actual code context.</p>
+            <p>Bad: "Please always remember to use TypeScript for all code in this project because it provides type safety..."</p>
             
-            <p>Press <kbd>⇧⌘I</kbd> to see token count. Keep your instructions concise.</p>
+            <p>Good: "Use TypeScript. No exceptions."</p>
             
-            <h3>Live File Watching</h3>
+            <p><strong>Show examples.</strong> A code snippet beats a paragraph of explanation.</p>
             
-            <p>Some workflows involve agents modifying their own instructions (meta, right?). markjason shows these changes instantly without manual refresh.</p>
-            
-            <h3>Visual Hierarchy While Editing</h3>
-            
-            <p>Unlike VS Code where all text is monospace and same-sized, markjason renders headers larger even in edit mode. You see the document structure as you write.</p>
-            
-            <h3>0.3s Launch</h3>
-            
-            <p>You're tweaking agent instructions frequently. Every second counts.</p>
-            
-            <h2>Best Practices for AGENTS.md</h2>
-            
-            <h3>Keep It Concise</h3>
-            
-            <p>Every token in <code>AGENTS.md</code> is a token not available for code context. Be brief but complete.</p>
-            
-            <p>Bad:</p>
-            <pre><code>Please always remember to use TypeScript for all code in this project. TypeScript is our language of choice because it provides type safety and better developer experience...</code></pre>
-            
-            <p>Good:</p>
-            <pre><code>Use TypeScript. No exceptions.</code></pre>
-            
-            <h3>Be Specific About Patterns</h3>
-            
-            <p>Vague instructions get vague results.</p>
-            
-            <p>Bad:</p>
-            <pre><code>Write clean code.</code></pre>
-            
-            <p>Good:</p>
-            <pre><code>- Functions under 30 lines
-- No nested ternaries
-- Extract magic numbers to constants</code></pre>
-            
-            <h3>Include Real Examples</h3>
-            
-            <p>Show, don't just tell.</p>
-            
-            <pre><code>## Component Pattern
-
-Example:
-```tsx
-export function UserCard({ user }: { user: User }) {
-  return (
-    &lt;div className="card"&gt;
-      &lt;h3&gt;{user.name}&lt;/h3&gt;
-    &lt;/div&gt;
-  );
-}
-```</code></pre>
-            
-            <h3>Update Regularly</h3>
-            
-            <p>Your <code>AGENTS.md</code> should evolve with your project. After finding a pattern that works (or doesn't), update the instructions.</p>
-            
-            <h2>AGENTS.md for Different Tools</h2>
-            
-            <h3>Claude Code</h3>
-            
-            <p>Claude Code reads <code>CLAUDE.md</code> or <code>AGENTS.md</code> in your project root. It also respects <code>.claude</code> directory for project settings.</p>
-            
-            <h3>Cursor</h3>
-            
-            <p>Cursor uses <code>.cursorrules</code> in your project root. Same markdown format, different filename.</p>
-            
-            <h3>GitHub Copilot</h3>
-            
-            <p>Copilot Workspace reads from <code>.github/copilot-instructions.md</code>.</p>
-            
-            <h3>Generic Setup</h3>
-            
-            <p>If your tool doesn't have a specific convention, use <code>AGENTS.md</code> in the project root. It's becoming the de facto standard.</p>
-            
-            <h2>Workflow: Iterating on Agent Instructions</h2>
-            
-            <ol>
-                <li>Open <code>AGENTS.md</code> in markjason</li>
-                <li>Edit instructions</li>
-                <li>Check token count (<kbd>⇧⌘I</kbd>)</li>
-                <li>Preview rendered (<kbd>⌘E</kbd>)</li>
-                <li>Changes save automatically</li>
-                <li>Test with your agent</li>
-                <li>Refine based on results</li>
-            </ol>
-            
-            <p>This cycle happens dozens of times as you tune your agent's behavior. Every second saved matters.</p>
-            
-            <h2>Share Your Instructions</h2>
-            
-            <p>Need to share your agent instructions with teammates who don't have the file?</p>
-            
-            <p>Press <kbd>⇧⌘C</kbd> to copy as image. Paste into Slack, Discord, or documentation.</p>
+            <p><strong>Update often.</strong> Your agent instructions should evolve with your project.</p>
             
             <div class="use-case-cta">
                 <a href="/#download" class="btn btn-primary">Download markjason</a>
-                <p class="cta-note">Free. The fastest way to edit AGENTS.md.</p>
+                <p class="cta-note">Free. No account. macOS only.</p>
             </div>
-            
-            <h2>Related</h2>
-            
-            <ul>
-                <li><a href="/use-cases/ai-coding-editor">Best Markdown Editor for AI Coding</a></li>
-                <li><a href="/docs/markjason-vs-vscode">markjason vs VS Code</a></li>
-                <li><a href="/faq">FAQ</a></li>
-            </ul>
         </article>
     </main>
 
@@ -280,106 +133,19 @@ export function UserCard({ user }: { user: User }) {
     <script src="../script.js"></script>
     
     <style>
-        .use-case-article {
-            max-width: 800px;
-        }
-        
-        .use-case-intro {
-            font-size: 1.2em;
-            color: var(--text-secondary);
-            margin-bottom: 2rem;
-            line-height: 1.7;
-        }
-        
-        h2 {
-            margin-top: 2.5rem;
-            margin-bottom: 1rem;
-            color: var(--text-primary);
-        }
-        
-        h3 {
-            margin-top: 1.5rem;
-            margin-bottom: 0.75rem;
-            color: var(--accent-md);
-        }
-        
-        p {
-            color: var(--text-secondary);
-            margin-bottom: 1rem;
-            line-height: 1.7;
-        }
-        
-        ul, ol {
-            margin: 1rem 0;
-            padding-left: 1.5rem;
-            color: var(--text-secondary);
-        }
-        
-        li {
-            margin: 0.5rem 0;
-            line-height: 1.6;
-        }
-        
-        code {
-            background: rgba(255,255,255,0.1);
-            padding: 0.15rem 0.4rem;
-            border-radius: 3px;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.9em;
-            color: var(--syntax-code);
-        }
-        
-        pre {
-            background: var(--bg-secondary);
-            border: 1px solid var(--border);
-            border-radius: 8px;
-            padding: 1rem;
-            overflow-x: auto;
-            margin: 1rem 0;
-        }
-        
-        pre code {
-            background: none;
-            padding: 0;
-            font-size: 0.85rem;
-            color: var(--text-secondary);
-        }
-        
-        kbd {
-            background: var(--bg-elevated);
-            border: 1px solid var(--border);
-            padding: 0.2rem 0.5rem;
-            border-radius: 4px;
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 0.85em;
-        }
-        
-        a {
-            color: var(--accent-md);
-        }
-        
-        a:hover {
-            text-decoration: underline;
-        }
-        
-        strong {
-            color: var(--text-primary);
-        }
-        
-        .use-case-cta {
-            margin-top: 3rem;
-            padding: 2rem;
-            background: rgba(255,255,255,0.03);
-            border-radius: 12px;
-            text-align: center;
-            border: 1px solid var(--border);
-        }
-        
-        .cta-note {
-            margin-top: 0.75rem;
-            font-size: 0.9rem;
-            color: var(--text-muted);
-        }
+        .use-case-article { max-width: 700px; }
+        .use-case-intro { font-size: 1.15em; color: var(--text-secondary); margin-bottom: 2rem; line-height: 1.7; }
+        h2 { margin-top: 2.5rem; margin-bottom: 1rem; color: var(--text-primary); }
+        p { color: var(--text-secondary); margin-bottom: 1rem; line-height: 1.7; }
+        ul { margin: 1rem 0; padding-left: 1.5rem; color: var(--text-secondary); }
+        li { margin: 0.5rem 0; line-height: 1.6; }
+        code { background: rgba(255,255,255,0.1); padding: 0.15rem 0.4rem; border-radius: 3px; font-family: 'JetBrains Mono', monospace; font-size: 0.9em; color: var(--syntax-code); }
+        kbd { background: var(--bg-elevated); border: 1px solid var(--border); padding: 0.2rem 0.5rem; border-radius: 4px; font-family: 'JetBrains Mono', monospace; font-size: 0.85em; }
+        a { color: var(--accent-md); }
+        a:hover { text-decoration: underline; }
+        strong { color: var(--text-primary); }
+        .use-case-cta { margin-top: 3rem; padding: 2rem; background: rgba(255,255,255,0.03); border-radius: 12px; text-align: center; border: 1px solid var(--border); }
+        .cta-note { margin-top: 0.75rem; font-size: 0.9rem; color: var(--text-muted); }
     </style>
 </body>
 </html>
