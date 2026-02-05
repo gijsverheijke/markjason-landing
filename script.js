@@ -7,19 +7,27 @@
     // ============================================
     // Download counter from GitHub API
     // ============================================
+    // HISTORICAL_DOWNLOADS: Downloads from deleted releases.
+    // When releasing a new version, add the current DMG download count here
+    // BEFORE deleting the old release. Run this to get the count:
+    // gh api repos/gijsverheijke/markjason-landing/releases --jq '[.[].assets[] | select(.name | endswith(".dmg")) | .download_count] | add'
+    const HISTORICAL_DOWNLOADS = 13;
+    
     async function fetchDownloadCount() {
         try {
             const response = await fetch('https://api.github.com/repos/gijsverheijke/markjason-landing/releases');
             const releases = await response.json();
             
-            let totalDownloads = 0;
+            let liveDownloads = 0;
             releases.forEach(release => {
                 release.assets.forEach(asset => {
                     if (asset.name.endsWith('.dmg')) {
-                        totalDownloads += asset.download_count;
+                        liveDownloads += asset.download_count;
                     }
                 });
             });
+            
+            const totalDownloads = HISTORICAL_DOWNLOADS + liveDownloads;
             
             // Update counters
             const counter = document.getElementById('download-counter');
