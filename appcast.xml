@@ -10,6 +10,7 @@
             <sparkle:version>4</sparkle:version>
             <sparkle:shortVersionString>0.27</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[<p>If the installer fails, please download the latest version manually from <a href="https://markjason.sh">markjason.sh</a></p>]]></description>
             <pubDate>Wed, 12 Feb 2026 23:00:00 +0800</pubDate>
             <enclosure 
                 url="https://github.com/gijsverheijke/markjason-landing/releases/download/0.27/markjason-0.27.dmg"
