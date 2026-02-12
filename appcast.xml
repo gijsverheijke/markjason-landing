@@ -7,14 +7,14 @@
         <language>en</language>
         <item>
             <title>Version 0.27</title>
-            <sparkle:version>3</sparkle:version>
+            <sparkle:version>4</sparkle:version>
             <sparkle:shortVersionString>0.27</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
             <pubDate>Wed, 12 Feb 2026 23:00:00 +0800</pubDate>
             <enclosure 
-                url="https://github.com/gijsverheijke/markjason-landing/releases/download/v0.1-3/markjason-0.27.dmg"
-                sparkle:edSignature="eP34D7wMpBRCVXBVSyggN9XuSF3QdgcDcBBf1ueqGDTBy3qvWOvp4TdjWfHEV44FRE5brwr+pP0bkkOEkcOhDQ=="
-                length="4274748"
+                url="https://github.com/gijsverheijke/markjason-landing/releases/download/0.27/markjason-0.27.dmg"
+                sparkle:edSignature="8QmTcJJ1s0J+KrFzO3DOCtTeZ1J2fb8V0ihDvc1/6vYm7dBImOE+GKABVN8NaI1Fh0W2KibKMlvADb1Q7vrYDw=="
+                length="4275060"
                 type="application/octet-stream" />
         </item>
     </channel>
