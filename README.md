@@ -67,8 +67,13 @@ markjason is the antidote:
 ### For JSON
 - Real-time validation
 - Jump to error location (⌥⌘J)
-- Collapsible tree view
+- Collapsible tree view in read mode
 - Pretty formatting
+- Sort keys alphabetically (⇧⌘K)
+- Breadcrumb navigation — click any node, see the full path
+- Copy JSON Pointer — right-click any value to copy its path
+- Smart Paste — paste minified or broken JSON, it auto-formats and repairs
+- Multi-line string editor — edit long string values inline in read mode
 
 ### For .env
 - Clean key-value display
@@ -111,6 +116,12 @@ markjason is the antidote:
 | ⌘L | Insert link |
 | ⇧⌘C | Inline code (\`code\`) |
 | ⌥⇧⌘C | Code block |
+
+### JSON
+| Shortcut | Action |
+|----------|--------|
+| ⇧⌘K | Sort JSON keys (A→Z) |
+| ⌥⌘J | Jump to JSON error |
 
 ### Files
 | Shortcut | Action |
