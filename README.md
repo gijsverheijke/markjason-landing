@@ -160,6 +160,14 @@ Indicators in markjason are inspired by the Apollo Command Module. A warm, vinta
 
 ---
 
+## Why is this repo the landing page?
+
+markjason itself is not open source. This repo hosts the landing page and the DMG releases. The setup is like this so the app can be completely free without any hosting costs (GitHub handles the downloads).
+
+If you're interested in the source or want to contribute, feel free to open an issue or DM.
+
+---
+
 ## About
 
 Created by [Gijs Verheijke](https://gijs.substack.com) for people who read too many AI outputs.
