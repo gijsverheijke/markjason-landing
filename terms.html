@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About — markjason</title>
-    <meta name="description" content="About markjason — the fastest way to read specs, edit prompts, and manage configs.">
+    <title>Terms of Service — markjason</title>
+    <meta name="description" content="Terms of Service for markjason — a native macOS editor for .md, .json, and .env files.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,14 +12,14 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="About — markjason">
-    <meta property="og:description" content="About markjason — the fastest way to read specs, edit prompts, and manage configs.">
+    <meta property="og:title" content="Terms of Service — markjason">
+    <meta property="og:description" content="Terms of Service for markjason — a native macOS editor for .md, .json, and .env files.">
     <meta property="og:image" content="https://markjason.sh/og-image.png?v=2">
-    <meta property="og:url" content="https://markjason.sh/about">
+    <meta property="og:url" content="https://markjason.sh/terms">
     <meta property="og:type" content="website">
     
     <!-- Canonical URL -->
-    <link rel="canonical" href="https://markjason.sh/about">
+    <link rel="canonical" href="https://markjason.sh/terms">
 </head>
 <body>
     <div class="grain"></div>
@@ -42,8 +42,28 @@
     </header>
 
     <main class="about-main">
-        <article id="readme-content" class="readme-content">
-            <p class="loading">Loading...</p>
+        <article class="readme-content">
+            <h1>Terms of Service</h1>
+            <p class="terms-date">March 9, 2026</p>
+            <p>markjason is a simple app. These terms are simple too.</p>
+
+            <h2>Agreement</h2>
+            <p>By downloading or using markjason, you agree to these terms.</p>
+
+            <h2>What it does</h2>
+            <p>markjason is a native macOS editor for <code>.md</code>, <code>.json</code>, and <code>.env</code> files. It reads and writes local files on your machine. It only modifies files when you explicitly edit and save them.</p>
+
+            <h2>No warranty</h2>
+            <p>markjason is provided as-is, without warranty of any kind, express or implied, including fitness for a particular purpose. It may contain bugs or behave unexpectedly. We're not liable for damages arising from its use, including data loss or interruption of work.</p>
+
+            <h2>Updates</h2>
+            <p>markjason may check for and prompt you to install updates. We may change, suspend, or discontinue the app at any time.</p>
+
+            <h2>Privacy</h2>
+            <p>markjason does not collect, transmit, or store any personal data. No analytics, no tracking, no accounts. Your files stay on your machine. The only network request the app makes is checking for updates.</p>
+
+            <h2>Changes</h2>
+            <p>We may update these terms. Continued use after changes means acceptance. The date above reflects the latest revision.</p>
         </article>
     </main>
 
@@ -68,18 +88,6 @@
         </div>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <script>
-        fetch('README.md')
-            .then(response => response.text())
-            .then(md => {
-                document.getElementById('readme-content').innerHTML = marked.parse(md);
-            })
-            .catch(err => {
-                document.getElementById('readme-content').innerHTML = '<p>Failed to load README.</p>';
-                console.error(err);
-            });
-    </script>
     <script src="script.js"></script>
 </body>
 </html>

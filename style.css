@@ -2003,3 +2003,10 @@ body {
     height: auto;
     border-radius: 8px;
 }
+
+/* Terms page */
+.terms-date {
+    color: var(--text-dim);
+    font-size: 0.9rem;
+    margin-bottom: 2rem;
+}
