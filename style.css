@@ -1809,7 +1809,7 @@ body {
 .features-bottom-row {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: var(--space-lg);
+    gap: var(--space-xl);
     margin-top: var(--space-lg);
 }
 

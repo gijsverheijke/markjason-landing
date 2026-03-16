@@ -47,10 +47,11 @@
             "0.3 second startup time",
             "~100MB RAM usage",
             "Live file sync for AI coding workflows",
-            "Markdown editing and preview",
+            "Markdown editing and preview with Raw/Read toggle",
             "Outline panel with heading navigation",
-            "JSON validation and tree view",
-            ".env file support",
+            "Task list checkboxes",
+            "JSON validation, tree view, and breadcrumb navigation",
+            ".env file support with one-click copy",
             "Token counting for prompts",
             "Copy as image",
             "Native macOS with SwiftUI"
@@ -175,34 +176,22 @@
                             <h3>Capture agent output</h3>
                         </div>
                         <p>
-                            Paste from clipboard → auto-detect format → instant preview. The fastest path from Claude to readable.
+                            Paste from clipboard, auto-detect format, instant preview.<br>
+                            The fastest path from Claude to readable.
                         </p>
                     </div>
                     
                     <div class="feature-block">
                         <div class="feature-block-header">
-                            <span class="feature-block-icon">⚡</span>
-                            <h3>Actually instant</h3>
+                            <span class="feature-block-shortcut">⌘E</span>
+                            <h3>Raw ↔ Read</h3>
                         </div>
                         <p>
-                            0.3 seconds cold start. 100MB RAM.<br>
-                            Not "fast for an Electron app." Actually fast.
+                            One key. Toggle between editing and rendered preview.<br>
+                            Scroll position stays put. Sub-line precision.
                         </p>
                     </div>
                     
-                    <div class="feature-block">
-                        <div class="feature-block-header">
-                            <span class="feature-block-icon">📋</span>
-                            <h3>Insta-copy everything</h3>
-                        </div>
-                        <p>
-                            ENV value? Click. Filename? Click or <kbd>⌃⌘C</kbd>.<br>
-                            Your agent asks "which file?" You know what to do.
-                        </p>
-                    </div>
-                </div>
-                
-                <div class="feature-col feature-col--right">
                     <div class="feature-block">
                         <div class="feature-block-header">
                             <span class="feature-block-shortcut">⌘⇧O</span>
@@ -224,15 +213,50 @@
                             No reopening, no refresh, just there.
                         </p>
                     </div>
-                    
+                </div>
+                
+                <div class="feature-col feature-col--right">
                     <div class="feature-block">
                         <div class="feature-block-header">
                             <span class="feature-block-icon">{}</span>
                             <h3>JSON you can read</h3>
                         </div>
                         <p>
-                            Collapsible tree. Types color-coded. Search with <kbd>⌘F</kbd>.<br>
-                            Error? Click it. Jump there.
+                            Collapsible tree. Types color-coded. Breadcrumb nav.<br>
+                            Validation errors? Click to jump there.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-block">
+                        <div class="feature-block-header">
+                            <span class="feature-block-icon">🔑</span>
+                            <h3>.env made simple</h3>
+                        </div>
+                        <p>
+                            Clean key-value display. Click any value to copy it.<br>
+                            Finally, env files that don't look like a wall of text.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-block">
+                        <div class="feature-block-header">
+                            <span class="feature-block-icon">📋</span>
+                            <h3>Insta-copy everything</h3>
+                        </div>
+                        <p>
+                            Filename? <kbd>⌃⌘C</kbd>. JSON path? Right-click. ENV value? Click.<br>
+                            Your agent asks "which file?" You already copied it.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-block">
+                        <div class="feature-block-header">
+                            <span class="feature-block-icon">📸</span>
+                            <h3>Share as image</h3>
+                        </div>
+                        <p>
+                            Export any file as a clean, shareable image.<br>
+                            Send specs to non-technical colleagues. No screenshots.
                         </p>
                     </div>
                 </div>
@@ -241,23 +265,23 @@
             <div class="features-bottom-row">
                 <div class="feature-block">
                     <div class="feature-block-header">
+                        <span class="feature-block-icon">⚡</span>
+                        <h3>Actually instant</h3>
+                    </div>
+                    <p>
+                        0.3 seconds cold start. 100MB RAM.<br>
+                        Not "fast for an Electron app." Actually fast.
+                    </p>
+                </div>
+                
+                <div class="feature-block">
+                    <div class="feature-block-header">
                         <span class="feature-block-icon">⌨️</span>
                         <h3>Keyboard first</h3>
                     </div>
                     <p>
                         <kbd>⌘K</kbd> quick open. <kbd>⌘B</kbd> bold. <kbd>⌘⇧M</kbd> syntax help.<br>
                         Your hands stay where they belong.
-                    </p>
-                </div>
-                
-                <div class="feature-block">
-                    <div class="feature-block-header">
-                        <span class="feature-block-icon">📸</span>
-                        <h3>Share as image</h3>
-                    </div>
-                    <p>
-                        One click to export any file as a clean, shareable image.<br>
-                        Send specs to non-technical colleagues. No screenshots.
                     </p>
                 </div>
             </div>
