@@ -59,6 +59,7 @@ markjason is the antidote:
 
 ### For Markdown
 - Read mode toggle (⌘E)
+- Task list checkboxes — `- [x]` and `- [ ]` render as proper checkboxes with strikethrough
 - Syntax highlighting and font sizes
 - Bold, italic, links, code formatting (⌘B, ⌘I, ⌘L, ⇧⌘C)
 - Copy rendered preview as image (⇧⌘C in read mode)
@@ -80,6 +81,7 @@ markjason is the antidote:
 - One-click copy of keys and values
 
 ### Navigation
+- **Outline panel (⌘⇧O)** — all headings as a clickable table of contents, highlights your current section as you scroll, Ctrl+Up/Down to jump between headings
 - Sidebar file browser with pinned files (⌘D)
 - Quick Open (⌘K) — fuzzy search across all recent files and tabs
 - Tabs with drag reordering (⌘1-9 to switch)
