@@ -6,16 +6,16 @@
         <description>markjason updates</description>
         <language>en</language>
         <item>
-            <title>Version 0.28</title>
-            <sparkle:version>7</sparkle:version>
-            <sparkle:shortVersionString>0.28</sparkle:shortVersionString>
+            <title>Version 0.29</title>
+            <sparkle:version>8</sparkle:version>
+            <sparkle:shortVersionString>0.29</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <pubDate>Tue, 04 Mar 2026 07:30:00 +0800</pubDate>
-            <description><![CDATA[<p>JSON Mode Sprint 1: Sort keys (⇧⌘K), breadcrumb navigation, copy JSON pointer, smart paste with auto-repair, multi-line string editor. Plus UI improvements and bug fixes.</p><p>If the installer fails, please download the latest version manually from <a href="https://markjason.sh">markjason.sh</a></p>]]></description>
+            <pubDate>Mon, 16 Mar 2026 23:48:00 +0800</pubDate>
+            <description><![CDATA[<p>Outline panel (⌘⇧O) for heading navigation, task list checkboxes in read mode, improved tab bar with active indicator. Plus scroll tracking and keyboard heading jumps (Ctrl+Up/Down).</p><p>If the installer fails, please download the latest version manually from <a href="https://markjason.sh">markjason.sh</a></p>]]></description>
             <enclosure 
-                url="https://github.com/gijsverheijke/markjason-landing/releases/download/0.27/markjason-0.28.dmg"
-                sparkle:edSignature="iafpObTfkdiX+knfiqVRbzuNy8WMM7eYUCGPxc7O81tuXalu5e7FAh4wkWdQiGdRJcx9c7eey6vTdF4WGVJ2Bg=="
-                length="4379144"
+                url="https://github.com/gijsverheijke/markjason-landing/releases/download/0.27/markjason-0.29.dmg"
+                sparkle:edSignature="ZSmj+s9PdYDiUb8Fd/7Wxl9U6rlED8boSlwNmTIVTKVZiTXBaNzxNB8GfVwk+qqnRimcEF2iQLxANHFrFwVRDw=="
+                length="4451078"
                 type="application/octet-stream" />
         </item>
     </channel>
