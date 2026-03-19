@@ -6,16 +6,16 @@
         <description>markjason updates</description>
         <language>en</language>
         <item>
-            <title>Version 0.29</title>
-            <sparkle:version>8</sparkle:version>
-            <sparkle:shortVersionString>0.29</sparkle:shortVersionString>
+            <title>Version 0.3</title>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>0.3</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <pubDate>Mon, 16 Mar 2026 23:48:00 +0800</pubDate>
-            <description><![CDATA[<p>Outline panel (⌘⇧O) for heading navigation, task list checkboxes in read mode, improved tab bar with active indicator. Plus scroll tracking and keyboard heading jumps (Ctrl+Up/Down).</p><p>If the installer fails, please download the latest version manually from <a href="https://markjason.sh">markjason.sh</a></p>]]></description>
+            <pubDate>Wed, 19 Mar 2026 13:30:00 +0800</pubDate>
+            <description><![CDATA[<p>Live folder watching — side panel auto-refreshes on external file changes. MDX support (.mdx, .mdoc, .mdown, .mkd, .mkdn). Performance improvements for larger documents. Hidden files now visible in folder views. Improved .env rendering.</p><p>If the installer fails, please download the latest version manually from <a href="https://markjason.sh">markjason.sh</a></p>]]></description>
             <enclosure 
-                url="https://github.com/gijsverheijke/markjason-landing/releases/download/0.27/markjason-0.29.dmg"
-                sparkle:edSignature="ZSmj+s9PdYDiUb8Fd/7Wxl9U6rlED8boSlwNmTIVTKVZiTXBaNzxNB8GfVwk+qqnRimcEF2iQLxANHFrFwVRDw=="
-                length="4451078"
+                url="https://github.com/gijsverheijke/markjason-landing/releases/download/0.27/markjason-0.3.dmg"
+                sparkle:edSignature="QVkbfgsC5YfVgvbohH55eFu3xK2TxNwLsp0B/htF35YVrej6V0rbes2nj+bkNxZrcOM9XFgFg6iEVnW+J15fBA=="
+                length="4475363"
                 type="application/octet-stream" />
         </item>
     </channel>
