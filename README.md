@@ -38,7 +38,7 @@ markjason is the antidote:
 
 ## Install
 
-1. **[Download the DMG](https://github.com/gijsverheijke/markjason-landing/releases/download/0.27/markjason-0.3.dmg)**
+1. **[Download the DMG](https://github.com/gijsverheijke/markjason-landing/releases/download/0.27/markjason-0.31.dmg)**
 2. Drag markjason to Applications
 3. Open and enjoy
 

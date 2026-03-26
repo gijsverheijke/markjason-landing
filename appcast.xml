@@ -6,16 +6,16 @@
         <description>markjason updates</description>
         <language>en</language>
         <item>
-            <title>Version 0.3</title>
-            <sparkle:version>9</sparkle:version>
-            <sparkle:shortVersionString>0.3</sparkle:shortVersionString>
+            <title>Version 0.31</title>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>0.31</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <pubDate>Wed, 19 Mar 2026 13:30:00 +0800</pubDate>
-            <description><![CDATA[<p>Live folder watching — side panel auto-refreshes on external file changes. MDX support (.mdx, .mdoc, .mdown, .mkd, .mkdn). Performance improvements for larger documents. Hidden files now visible in folder views. Improved .env rendering.</p><p>If the installer fails, please download the latest version manually from <a href="https://markjason.sh">markjason.sh</a></p>]]></description>
+            <pubDate>Wed, 26 Mar 2026 15:39:00 +0800</pubDate>
+            <description><![CDATA[<p><b>New:</b> Share as PDF (⌘⇧C) — export any document as a print-ready PDF with dedicated light-mode print styles, including blue headings, clean typography, booktabs-style tables, and continuous code block panels with syntax highlighting.</p><p><b>Improved:</b> Table wrapping — tables no longer truncate; columns auto-size and cells wrap across multiple lines.</p><p>If the installer fails, please download the latest version manually from <a href="https://markjason.sh">markjason.sh</a></p>]]></description>
             <enclosure 
-                url="https://github.com/gijsverheijke/markjason-landing/releases/download/0.27/markjason-0.3.dmg"
-                sparkle:edSignature="QVkbfgsC5YfVgvbohH55eFu3xK2TxNwLsp0B/htF35YVrej6V0rbes2nj+bkNxZrcOM9XFgFg6iEVnW+J15fBA=="
-                length="4475363"
+                url="https://github.com/gijsverheijke/markjason-landing/releases/download/0.27/markjason-0.31.dmg"
+                sparkle:edSignature="ewebEq4EytTYt3vpa+WuEVjhFD16B0J7edYz2nfqjo+GYYEjxZXjf6AIdmdcsCn3pvlTAG2h8WACIeZFs3gwDA=="
+                length="4510095"
                 type="application/octet-stream" />
         </item>
     </channel>
