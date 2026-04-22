@@ -6,16 +6,16 @@
         <description>markjason updates</description>
         <language>en</language>
         <item>
-            <title>Version 0.32</title>
-            <sparkle:version>11</sparkle:version>
-            <sparkle:shortVersionString>0.32</sparkle:shortVersionString>
+            <title>Version 0.33</title>
+            <sparkle:version>12</sparkle:version>
+            <sparkle:shortVersionString>0.33</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <pubDate>Thu, 26 Mar 2026 22:39:00 +0800</pubDate>
-            <description><![CDATA[<p><b>Improved:</b> PDF export (⇧⌘E) now works from edit mode too, not just read mode. Menus reorganized with logical grouping and tab shortcuts (⌘1-9) in the menu bar.</p><p><b>Fixed:</b> Auto-save no longer triggers the "File externally edited" banner.</p><p>If the installer fails, please download the latest version manually from <a href="https://markjason.sh">markjason.sh</a></p>]]></description>
+            <pubDate>Wed, 22 Apr 2026 10:50:00 +0800</pubDate>
+            <description><![CDATA[<p><b>Improved:</b> JSONC support, including comments and trailing commas.</p><p><b>Fixed:</b> Switching from Edit mode to Read mode no longer sometimes shows a blank screen.</p><p>If the installer fails, please download the latest version manually from <a href="https://markjason.sh">markjason.sh</a></p>]]></description>
             <enclosure 
-                url="https://github.com/gijsverheijke/markjason-landing/releases/download/0.27/markjason-0.32.dmg"
-                sparkle:edSignature="ANsT25/RC4ErHmqLEVo7LwmLdFVyY3vh/LceoztVUWeY3fJOdDSFLbbqKOhDdygWisTeWhb770O9feSQdsaYAw=="
-                length="4490375"
+                url="https://github.com/gijsverheijke/markjason-landing/releases/download/0.27/markjason-0.33.dmg"
+                sparkle:edSignature="krXnC0TIkdDniuZgwcRcp3V+NL1vMlk49gfblS0uDSPpFUoacg4BNyal9e9NdX+q5zd2V25D1+U9RrRCdEe4CA=="
+                length="4504648"
                 type="application/octet-stream" />
         </item>
     </channel>
