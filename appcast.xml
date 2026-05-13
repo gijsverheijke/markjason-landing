@@ -6,16 +6,16 @@
         <description>markjason updates</description>
         <language>en</language>
         <item>
-            <title>Version 0.33</title>
-            <sparkle:version>12</sparkle:version>
-            <sparkle:shortVersionString>0.33</sparkle:shortVersionString>
+            <title>Version 0.34</title>
+            <sparkle:version>13</sparkle:version>
+            <sparkle:shortVersionString>0.34</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <pubDate>Wed, 22 Apr 2026 10:50:00 +0800</pubDate>
-            <description><![CDATA[<p><b>Improved:</b> JSONC support, including comments and trailing commas.</p><p><b>Fixed:</b> Switching from Edit mode to Read mode no longer sometimes shows a blank screen.</p><p>If the installer fails, please download the latest version manually from <a href="https://markjason.sh">markjason.sh</a></p>]]></description>
+            <pubDate>Wed, 13 May 2026 14:45:00 +0800</pubDate>
+            <description><![CDATA[<p><b>New:</b> Review external edits without blocking your flow. When a file changes on disk, markjason now loads the latest version immediately and keeps a subtle review notice.</p><p><b>Improved:</b> External file changes are treated as forward progress. You can inspect the diff, revert changes, or keep changes while editing and autosave continue normally.</p><p><b>Fixed:</b> The external-edit banner no longer flashes and disappears immediately after reload.</p><p>If the installer fails, please download the latest version manually from <a href="https://markjason.sh">markjason.sh</a></p>]]></description>
             <enclosure 
-                url="https://github.com/gijsverheijke/markjason-landing/releases/download/0.27/markjason-0.33.dmg"
-                sparkle:edSignature="krXnC0TIkdDniuZgwcRcp3V+NL1vMlk49gfblS0uDSPpFUoacg4BNyal9e9NdX+q5zd2V25D1+U9RrRCdEe4CA=="
-                length="4504648"
+                url="https://github.com/gijsverheijke/markjason-landing/releases/download/0.34/markjason-0.34.dmg"
+                sparkle:edSignature="9WExrnFjX6bEkIjK2ugiyzTLBhoSISKqtCCna6sqJSY1Tw0z3oEOAeEJwBKkHFuMQeR2lti99plRBkwIQvGQAg=="
+                length="4750560"
                 type="application/octet-stream" />
         </item>
     </channel>
