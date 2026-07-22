@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>markjason vs VS Code — The Right Tool for the Job</title>
-    <meta name="description" content="VS Code is a powerful IDE. markjason is a fast, focused editor for markdown, JSON, and .env files. Compare them to find what's right for your workflow.">
+    <meta name="description" content="VS Code is a powerful IDE. markjason is a fast, focused Mac editor for Markdown, JSON, env, text and source files. Compare their roles.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     
     <!-- Open Graph -->
     <meta property="og:title" content="markjason vs VS Code — The Right Tool for the Job">
-    <meta property="og:description" content="VS Code is a powerful IDE. markjason is a fast viewer for markdown, JSON, and .env files. Compare them to find what's right for your workflow.">
+    <meta property="og:description" content="Use VS Code for projects. Use markjason to open and inspect individual text and code files instantly.">
     <meta property="og:image" content="https://markjason.sh/og-image.png">
     <meta property="og:url" content="https://markjason.sh/docs/markjason-vs-vscode">
     <meta property="og:type" content="article">
@@ -27,7 +27,7 @@
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": "markjason vs VS Code — The Right Tool for the Job",
-        "description": "Detailed comparison between markjason and VS Code for markdown, JSON, and .env file editing. Find which tool fits your workflow.",
+        "description": "Detailed comparison between markjason and VS Code for quickly opening and editing individual Markdown, JSON, env, text and source files.",
         "author": {
             "@type": "Organization",
             "name": "markjason"
@@ -74,7 +74,7 @@
                 <tbody>
                     <tr>
                         <td><strong>Purpose</strong></td>
-                        <td>Fast viewer/editor for .md, .json, .env</td>
+                        <td>Fast single-file editor for text and code files</td>
                         <td>Full IDE for all programming tasks</td>
                     </tr>
                     <tr>
@@ -99,8 +99,13 @@
                     </tr>
                     <tr>
                         <td><strong>Edit mode typography</strong></td>
-                        <td>✅ Headers styled larger while editing</td>
+                        <td>✅ Visual hierarchy plus persistent 10–24pt sizing</td>
                         <td>❌ Monospace only, no visual hierarchy</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Source-code files</strong></td>
+                        <td>✅ Open individual UTF-8 files with syntax highlighting</td>
+                        <td>✅ Full project and language tooling</td>
                     </tr>
                     <tr>
                         <td><strong>Real-time file updates</strong></td>
@@ -149,6 +154,7 @@
                 <li><strong>Reading specs</strong> that your AI generated</li>
                 <li><strong>Editing prompts</strong> in AGENTS.md or similar files</li>
                 <li><strong>Checking configs</strong> like mcp.json or .env files</li>
+                <li><strong>Inspecting one source file</strong> your agent generated or changed</li>
                 <li><strong>Reviewing changes</strong> that agents made to markdown docs</li>
             </ul>
             
@@ -199,6 +205,10 @@
             <p>When you're working with AI coding agents like Claude Code, Cursor, or Codex, your files change constantly. markjason watches for external changes and updates instantly — you see what your agent wrote the moment it saves.</p>
             
             <p>VS Code requires manual reload or specific extension configuration to achieve this.</p>
+
+            <h2>Opening Cloud-Hosted Files</h2>
+
+            <p>markjason can open files managed by iCloud and other macOS File Provider services. If a file still needs to download, its retry behavior gives the provider time to make the local content available. It does not add another cloud or account layer.</p>
             
             <h2>The Vibecheck</h2>
             
@@ -247,9 +257,9 @@
             
             <h2>The Bottom Line</h2>
             
-            <p>VS Code does everything. markjason does three things extremely well.</p>
+            <p>VS Code does everything. markjason does one job extremely well: opening and editing an individual file without bringing an IDE along.</p>
             
-            <p>VS Code is the Swiss Army knife — it'll handle markdown, but it treats it like any other file. markjason is a scalpel — purpose-built for markdown, JSON, and .env, with thoughtful details like visual hierarchy while editing and instant preview toggling.</p>
+            <p>VS Code is the Swiss Army knife. markjason is a scalpel for Markdown, JSON, env, text and source files, with thoughtful details like visual hierarchy, adjustable text size and instant preview toggling.</p>
             
             <p>They're not competitors. They're complements.</p>
             

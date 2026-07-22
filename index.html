@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>markjason — .md and .json, nothing else</title>
-    <meta name="description" content="A lightning fast editor for .md and .json. For dedicated vibecoders who don't want to open an IDE just to read a file.">
+    <title>markjason | Fast Mac editor for Markdown, JSON and code files</title>
+    <meta name="description" content="A lightning-fast native Mac editor for Markdown, JSON, env, text and source files. Open agent-generated files instantly without launching an IDE.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -12,14 +12,14 @@
     <link rel="icon" href="favicon.svg" type="image/svg+xml">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="markjason — .md and .json, nothing else">
-    <meta property="og:description" content="A lightning fast editor for .md and .json. For dedicated vibecoders.">
+    <meta property="og:title" content="markjason | The fast editor for files around your code">
+    <meta property="og:description" content="Open Markdown, JSON, env, text and source files instantly. Built for AI coding workflows on macOS.">
     <meta property="og:image" content="https://markjason.sh/og-image.png?v=2">
     <meta property="og:url" content="https://markjason.sh">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="markjason — .md and .json, nothing else">
-    <meta name="twitter:description" content="A lightning fast editor for .md and .json. For dedicated vibecoders.">
+    <meta name="twitter:title" content="markjason | The fast editor for files around your code">
+    <meta name="twitter:description" content="Open Markdown, JSON, env, text and source files instantly. Built for AI coding workflows on macOS.">
     <meta name="twitter:image" content="https://markjason.sh/og-image.png?v=2">
     
     <!-- Canonical URL -->
@@ -31,13 +31,13 @@
         "@context": "https://schema.org",
         "@type": "SoftwareApplication",
         "name": "markjason",
-        "description": "Lightning-fast native macOS editor for .md, .json, and .env files. Built for AI coding workflows with live file sync, instant startup, and minimal resource usage.",
+        "description": "Lightning-fast native macOS editor for Markdown, JSON, env, text and source files. Built for AI coding workflows with live file sync, instant startup, and minimal resource usage.",
         "url": "https://markjason.sh",
-        "downloadUrl": "https://github.com/gijsverheijke/markjason-landing/releases/download/0.34/markjason-0.34.dmg",
+        "downloadUrl": "https://github.com/gijsverheijke/markjason-landing/releases/download/0.35/markjason-0.35.dmg",
         "operatingSystem": "macOS 14+",
         "applicationCategory": "DeveloperApplication",
         "applicationSubCategory": "Text Editor",
-        "softwareVersion": "0.26",
+        "softwareVersion": "0.35",
         "offers": {
             "@type": "Offer",
             "price": "0",
@@ -47,6 +47,10 @@
             "0.3 second startup time",
             "~100MB RAM usage",
             "Live file sync for AI coding workflows",
+            "Open valid UTF-8 text and source-code files with Command-O",
+            "Syntax highlighting for supported source-code formats",
+            "Persistent editor font sizing from 10pt to 24pt",
+            "Reliable opening and retry behavior for iCloud and File Provider files",
             "Markdown editing and preview with Raw/Read toggle",
             "Outline panel with heading navigation",
             "Task list checkboxes",
@@ -96,19 +100,19 @@
                     <h1 class="hero-title">markjason</h1>
                 </div>
                 <p class="hero-tagline">
-                    <span class="file-ext">.md</span> and <span class="file-ext">.json</span>, nothing else.
+                    your agent made a file. open it.
                 </p>
                 <p class="hero-description">
-                    the fastest way to read specs, edit prompts, and manage configs.<br>
+                    the fastest way to read specs, edit prompts, inspect code, and manage configs.<br>
                     <span class="hero-emphasis">built for the only human tasks in agentic coding.</span>
                 </p>
                 <div class="hero-actions">
-                    <a href="https://github.com/gijsverheijke/markjason-landing/releases/download/0.34/markjason-0.34.dmg" class="btn btn-primary">
+                    <a href="https://github.com/gijsverheijke/markjason-landing/releases/download/0.35/markjason-0.35.dmg" class="btn btn-primary">
                         <span class="btn-icon">⬇</span>
                         Download for Mac
                     </a>
                     <span class="download-counter" id="download-counter" aria-live="polite"></span>
-                    <span class="version">v0.34 · Apple Silicon & Intel</span>
+                    <span class="version">v0.35 · Apple Silicon & Intel</span>
 
                 </div>
             </div>
@@ -150,7 +154,7 @@
                             <div class="editor-line"><span class="syntax-hash">#</span> <span class="syntax-heading">AGENTS.MD</span></div>
                             <div class="editor-line"></div>
                             <div class="editor-line">A stupidly fast native macOS app for</div>
-                            <div class="editor-line"><span class="syntax-code">`.md`</span>, <span class="syntax-code">`.json`</span> and <span class="syntax-code">`.env`</span>. Built with <span class="syntax-marker">**</span><span class="syntax-bold">SwiftUI</span><span class="syntax-marker">**</span>.</div>
+                            <div class="editor-line">the text and code files around your work.</div>
                             <div class="editor-line"></div>
                             <div class="editor-line"><span class="syntax-list">-</span> KISS, DRY, optimize for <span class="syntax-marker">**</span><span class="syntax-bold">SPEED</span><span class="syntax-marker">**</span></div>
                             <div class="editor-line"><span class="syntax-list">-</span> Don't refactor unrelated code</div>
@@ -173,12 +177,12 @@
                 <div class="feature-col feature-col--left">
                     <div class="feature-block">
                         <div class="feature-block-header">
-                            <span class="feature-block-shortcut">⌘⇧N</span>
-                            <h3>Capture agent output</h3>
+                            <span class="feature-block-shortcut">⌘O</span>
+                            <h3>Open the file your agent made</h3>
                         </div>
                         <p>
-                            Paste from clipboard, auto-detect format, instant preview.<br>
-                            The fastest path from Claude to readable.
+                            Markdown, JSON, env, text, and source files.<br>
+                            Even uncommon extensions open when the content is valid UTF-8.
                         </p>
                     </div>
                     
@@ -241,12 +245,12 @@
                     
                     <div class="feature-block">
                         <div class="feature-block-header">
-                            <span class="feature-block-icon">📋</span>
-                            <h3>Insta-copy everything</h3>
+                            <span class="feature-block-shortcut">⌘+/−</span>
+                            <h3>Text at your size</h3>
                         </div>
                         <p>
-                            Filename? <kbd>⌃⌘C</kbd>. JSON path? Right-click. ENV value? Click.<br>
-                            Your agent asks "which file?" You already copied it.
+                            Scale edit-mode text from 10pt to 24pt. <kbd>⌘0</kbd> resets to 14pt.<br>
+                            Your choice persists when you relaunch.
                         </p>
                     </div>
                     
@@ -277,12 +281,12 @@
                 
                 <div class="feature-block">
                     <div class="feature-block-header">
-                        <span class="feature-block-icon">⌨️</span>
-                        <h3>Keyboard first</h3>
+                        <span class="feature-block-icon">☁️</span>
+                        <h3>Cloud files that actually open</h3>
                     </div>
                     <p>
-                        <kbd>⌘K</kbd> quick open. <kbd>⌘B</kbd> bold. <kbd>⌘⇧M</kbd> syntax help.<br>
-                        Your hands stay where they belong.
+                        More reliable opening and retrying for iCloud and other File Provider files.<br>
+                        Your own cloud stays your source of truth.
                     </p>
                 </div>
             </div>
@@ -362,12 +366,12 @@
             <p class="download-subtitle">Free. No account. No tracking. Just an app.</p>
             
             <div class="download-box">
-                <a href="https://github.com/gijsverheijke/markjason-landing/releases/download/0.34/markjason-0.34.dmg" class="btn btn-primary btn-large">
+                <a href="https://github.com/gijsverheijke/markjason-landing/releases/download/0.35/markjason-0.35.dmg" class="btn btn-primary btn-large">
                     <span class="btn-icon">⬇</span>
                     Download for Mac
                 </a>
                 <p class="download-meta">
-                    v0.34 · macOS 14+ · Universal Binary · Free
+                    v0.35 · macOS 14+ · Universal Binary · Free
                 </p>
                 <p class="download-counter-large" id="download-counter-large"></p>
                 <p class="download-github">
@@ -376,7 +380,7 @@
             </div>
             
             <div class="setup-hint">
-                <p><strong>Pro tip:</strong> After installing, right-click any <span class="file-ext">.md</span> or <span class="file-ext">.json</span> file → Get Info → Open with → markjason → Change All.</p>
+                <p><strong>Pro tip:</strong> Press <kbd>⌘O</kbd> to open a Markdown, JSON, env, text, or source file. To make markjason the default for an extension, use Get Info → Open with → markjason → Change All.</p>
             </div>
         </section>
     </main>

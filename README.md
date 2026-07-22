@@ -22,14 +22,14 @@
 
 ## What is markjason?
 
-A stupidly fast macOS app for `.md`, `.json`, and `.env` files.
+A stupidly fast macOS app for Markdown, JSON, env, text, and source files.
 
-If you work with AI and accumulate lots of markdown specs, JSON configs, and .env files, you know the pain: opening a heavyweight IDE just to read a file, waiting for Electron apps to boot, or fighting with cluttered file browsers.
+If you work with AI and accumulate specs, configs, prompts, logs, and source files, you know the pain: opening a heavyweight IDE just to inspect one file, waiting for Electron apps to boot, or fighting with cluttered file browsers.
 
 markjason is the antidote:
 
 - ⚡ **Fast** — Native Swift, no Electron.
-- 🎯 **Focused** — Just markdown, JSON, and .env. Nothing else.
+- 🎯 **Focused:** A single-file editor for the text and code files around your work, not another IDE.
 - 🌙 **Dark mode only** — As nature intended.
 - 💾 **Auto-save** — With clear feedback. Never lose work.
 - 📁 **Lots of carefully crafted details** For the vibes.
@@ -38,13 +38,20 @@ markjason is the antidote:
 
 ## Install
 
-1. **[Download the DMG](https://github.com/gijsverheijke/markjason-landing/releases/download/0.34/markjason-0.34.dmg)**
+1. **[Download the DMG](https://github.com/gijsverheijke/markjason-landing/releases/download/0.35/markjason-0.35.dmg)**
 2. Drag markjason to Applications
 3. Open and enjoy
 
 ---
 
 ## Features
+
+### Open more of the files around your code
+- Press ⌘O to open Markdown, JSON, env, text, and source-code files
+- Supported source formats receive syntax highlighting
+- Files with uncommon extensions open as plain text or detected JSON when their UTF-8 content is valid
+- Binary and invalid text is rejected safely
+- More reliable opening and retry behavior for iCloud and other macOS File Provider files
 
 ### Realtime updates
 - Your agent edits AGENTS.md while you have it open? Boom, it's there in markjason
@@ -60,7 +67,7 @@ markjason is the antidote:
 ### For Markdown
 - Read mode toggle (⌘E)
 - Task list checkboxes — `- [x]` and `- [ ]` render as proper checkboxes with strikethrough
-- Syntax highlighting and font sizes
+- Syntax highlighting and persistent edit-mode font sizing from 10pt to 24pt
 - Bold, italic, links, code formatting (⌘B, ⌘I, ⌘L, ⇧⌘C)
 - Copy rendered preview as image (⇧⌘C in read mode)
 - Markdown syntax guide (⇧⌘M)
@@ -98,6 +105,8 @@ markjason is the antidote:
 | ⌘⇧N | New from Clipboard |
 | ⌘W | Close tab |
 | ⌘/ | Show all shortcuts |
+| ⌘+ / ⌘− | Increase / decrease editor text size |
+| ⌘0 | Reset editor text size to 14pt |
 
 ### Navigation
 | Shortcut | Action |
@@ -106,7 +115,7 @@ markjason is the antidote:
 | ⌘⇧[ | Previous tab |
 | ⌘⇧] | Next tab |
 | ⌘1-9 | Switch to tab 1-9 |
-| ⌘0 | Toggle sidebar |
+| ⌃⌘S | Toggle sidebar |
 
 ### Editing (Markdown)
 | Shortcut | Action |

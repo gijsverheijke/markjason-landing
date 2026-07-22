@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Markdown Editor for AI Coding Workflows | markjason</title>
-    <meta name="description" content="A lightweight markdown editor for developers using Claude Code, Codex, or Aider. Opens in 0.3s. See agent edits in real-time. No IDE required.">
+    <title>Fast File Editor for AI Coding Workflows | markjason</title>
+    <meta name="description" content="A lightweight Mac editor for inspecting Markdown, JSON, env, text and source files from Claude Code, Codex, Cursor or Aider. No IDE required.">
     <link rel="canonical" href="https://markjason.sh/use-cases/ai-coding-editor">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,8 +12,8 @@
     <link rel="stylesheet" href="../style.css">
     <link rel="icon" href="../favicon.svg" type="image/svg+xml">
     
-    <meta property="og:title" content="Markdown Editor for AI Coding Workflows | markjason">
-    <meta property="og:description" content="A lightweight markdown editor for developers using Claude Code, Codex, or Aider.">
+    <meta property="og:title" content="Fast File Editor for AI Coding Workflows | markjason">
+    <meta property="og:description" content="Open the text and code files your agent creates without launching an IDE.">
     <meta property="og:image" content="https://markjason.sh/og-image.png?v=2">
     <meta property="og:url" content="https://markjason.sh/use-cases/ai-coding-editor">
     <meta property="og:type" content="article">
@@ -22,8 +22,8 @@
     {
         "@context": "https://schema.org",
         "@type": "Article",
-        "headline": "Markdown Editor for AI Coding Workflows",
-        "description": "Why I built markjason for developers using terminal-based AI coding agents.",
+        "headline": "Fast File Editor for AI Coding Workflows",
+        "description": "Why I built markjason to inspect text and code files from terminal-based AI coding agents.",
         "author": { "@type": "Person", "name": "Gijs Verheijke" },
         "publisher": { "@type": "Organization", "name": "markjason", "url": "https://markjason.sh" },
         "mainEntityOfPage": "https://markjason.sh/use-cases/ai-coding-editor"
@@ -54,7 +54,7 @@
             <h1>Why I Built an Editor for AI Coding</h1>
             
             <p class="use-case-intro">
-                I use Claude Code in the terminal. The AI writes code. I don't need an IDE open anymore. But I still need to read and edit markdown files constantly.
+                I use Claude Code in the terminal. The AI writes code. I don't need an IDE open anymore. But I still need to inspect the files it creates and changes.
             </p>
             
             <h2>The Problem</h2>
@@ -77,15 +77,16 @@
                 <li><code>CLAUDE.md</code> with project context</li>
                 <li><code>.env</code> with API keys</li>
                 <li><code>mcp.json</code> with tool configs</li>
+                <li>Source files, scripts, and logs produced during a run</li>
             </ul>
             
             <p>Opening VS Code for this felt absurd. 3+ seconds to load an IDE just to read a markdown file? Plus 500MB of RAM sitting there?</p>
             
-            <p>I don't need syntax highlighting for 47 languages. I need to read three file types.</p>
+            <p>I don't need a second tool managing my whole project. I need to open one file, understand it, and get back to the agent.</p>
             
             <h2>The Solution</h2>
             
-            <p>I built markjason. Native macOS app that only does <code>.md</code>, <code>.json</code>, and <code>.env</code>.</p>
+            <p>I built markjason. A native macOS app for the text and code files around an AI workflow, without the weight of an IDE.</p>
             
             <p>Opens in 0.3 seconds. Uses about 100MB RAM. That's it.</p>
             
@@ -96,6 +97,16 @@
             <p>I keep <code>AGENTS.md</code> open in markjason while Claude Code works. When the agent updates the file, I see it instantly. No refresh button. No "file changed on disk" dialog. Just live updates.</p>
             
             <p>It's like watching the AI think.</p>
+
+            <h2>Open Whatever the Agent Produces</h2>
+
+            <p>Press <kbd>⌘O</kbd> to open Markdown, JSON, env, text, or source files. Supported code formats get syntax highlighting. Files with uncommon extensions still open when their UTF-8 content is valid, either as plain text or detected JSON.</p>
+
+            <p>Files in iCloud and other macOS File Provider locations get more reliable opening and retry behavior too. Your existing storage stays in charge.</p>
+
+            <h2>Make Dense Files Readable</h2>
+
+            <p>Use <kbd>⌘+</kbd> and <kbd>⌘−</kbd> to adjust edit-mode text from 10pt to 24pt. <kbd>⌘0</kbd> returns to the 14pt default, and the app remembers your choice after relaunching.</p>
             
             <h2>Token Counting</h2>
             
@@ -122,7 +133,7 @@
             
             <p>Free download. No account. No tracking.</p>
             
-            <p>Set it as default for <code>.md</code>, <code>.json</code>, and <code>.env</code> files. Double-click opens instantly.</p>
+            <p>Press <kbd>⌘O</kbd> for any supported text or code file. You can also set markjason as the default app for the extensions you open most.</p>
             
             <div class="use-case-cta">
                 <a href="/#download" class="btn btn-primary">Download markjason</a>

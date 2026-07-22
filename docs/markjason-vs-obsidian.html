@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>markjason vs Obsidian — Different Tools, Different Goals</title>
-    <meta name="description" content="Obsidian is a knowledge management powerhouse. markjason is a fast markdown viewer for AI workflows. Compare them to find your fit.">
+    <meta name="description" content="Obsidian is a knowledge management powerhouse. markjason is a fast single-file editor for text and code in AI workflows. Compare them.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -13,7 +13,7 @@
     
     <!-- Open Graph -->
     <meta property="og:title" content="markjason vs Obsidian — Different Tools, Different Goals">
-    <meta property="og:description" content="Obsidian is a knowledge management powerhouse. markjason is a fast markdown viewer for AI workflows. Compare them to find your fit.">
+    <meta property="og:description" content="Use Obsidian for connected knowledge. Use markjason to open individual text, code, JSON and env files without a vault.">
     <meta property="og:image" content="https://markjason.sh/og-image.png">
     <meta property="og:url" content="https://markjason.sh/docs/markjason-vs-obsidian">
     <meta property="og:type" content="article">
@@ -27,7 +27,7 @@
         "@context": "https://schema.org",
         "@type": "Article",
         "headline": "markjason vs Obsidian — Different Tools, Different Goals",
-        "description": "Compare markjason and Obsidian for markdown editing. Obsidian for knowledge management, markjason for fast AI coding workflows.",
+        "description": "Compare Obsidian for connected knowledge with markjason for quickly opening individual Markdown, JSON, env, text and source files.",
         "author": {
             "@type": "Organization",
             "name": "markjason"
@@ -74,7 +74,7 @@
                 <tbody>
                     <tr>
                         <td><strong>Primary purpose</strong></td>
-                        <td>Fast viewer for .md, .json, .env</td>
+                        <td>Fast single-file editor for text and code</td>
                         <td>Personal knowledge management</td>
                     </tr>
                     <tr>
@@ -159,6 +159,7 @@
                 <li>Checking <code>mcp.json</code> or similar config files</li>
                 <li>Managing <code>.env</code> files across projects</li>
                 <li>Reviewing markdown docs that agents generate</li>
+                <li>Inspecting a source or text file an agent created</li>
             </ul>
             
             <p>These are <strong>transient files</strong>, not permanent knowledge. You don't need to link them. You need to open, read, edit, close. Fast.</p>
@@ -173,7 +174,7 @@
                 <li>You don't want to "import" a config file into a vault</li>
             </ul>
             
-            <p>markjason opens any file, anywhere. No vault. No project. Just the file.</p>
+            <p>markjason opens valid UTF-8 text and code files wherever they live. No vault. No project. Just the file.</p>
             
             <h3>The Format Gap</h3>
             
@@ -184,14 +185,17 @@
             <ul>
                 <li><strong>JSON configs</strong> — <code>mcp.json</code>, <code>claude.json</code>, API configs, etc.</li>
                 <li><strong>.env files</strong> — environment variables across projects</li>
+                <li><strong>Text and source files:</strong> logs, scripts, code, and agent-generated artifacts</li>
             </ul>
             
-            <p>markjason handles all three natively:</p>
+            <p>markjason gives its core formats dedicated experiences and opens other valid text and code files without IDE overhead:</p>
             
             <ul>
                 <li><strong>JSON</strong> — real-time validation, jump-to-error, collapsible tree view</li>
                 <li><strong>.env</strong> — clean display with one-click copy for keys and values</li>
                 <li><strong>Markdown</strong> — instant read/edit toggle, copy as image</li>
+                <li><strong>Source code:</strong> syntax highlighting for supported formats</li>
+                <li><strong>Other UTF-8 text:</strong> focused plain-text editing, including uncommon extensions</li>
             </ul>
             
             <h3>The Resource Story</h3>
@@ -211,7 +215,7 @@
             
             <p>Here's a feature that matters for AI workflows: when your coding agent edits a file, markjason updates instantly. You see changes the moment they're saved.</p>
             
-            <p>Obsidian handles this within vaults, but markjason does it for any file, anywhere on your system.</p>
+            <p>Obsidian handles this within vaults, but markjason does it for valid text and code files outside a vault too.</p>
             
             <h2>Features markjason Doesn't Have (By Design)</h2>
             

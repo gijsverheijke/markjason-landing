@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FAQ — markjason | Common Questions About the Fast Markdown Editor</title>
-    <meta name="description" content="Frequently asked questions about markjason — the lightning-fast native macOS editor for .md, .json, and .env files. Built for AI coding workflows.">
+    <meta name="description" content="Frequently asked questions about markjason, the lightning-fast native macOS editor for Markdown, JSON, env, text and source files.">
     <link rel="canonical" href="https://markjason.sh/faq">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -14,7 +14,7 @@
     
     <!-- Open Graph -->
     <meta property="og:title" content="FAQ — markjason">
-    <meta property="og:description" content="Frequently asked questions about markjason — the fast native macOS editor for markdown, JSON, and .env files.">
+    <meta property="og:description" content="Learn which text and code files markjason opens, how font sizing works, and how it handles cloud-hosted files.">
     <meta property="og:image" content="https://markjason.sh/og-image.png">
     <meta property="og:url" content="https://markjason.sh/faq">
     <meta property="og:type" content="website">
@@ -30,7 +30,23 @@
                 "name": "What file types does markjason support?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "markjason supports .md (Markdown), .json (JSON), and .env (environment variable) files. That's it — no other formats. This focus is intentional: do three things extremely well instead of everything poorly."
+                    "text": "markjason has dedicated experiences for Markdown, JSON, and .env files. It also opens valid UTF-8 text and source-code files, including files with uncommon extensions. Supported source formats receive syntax highlighting, while other valid text opens as plain text. Binary or invalid text is rejected safely."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can I change the editor font size?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. In edit mode, use Command-Plus and Command-Minus to adjust text from 10pt to 24pt. Command-0 resets it to the 14pt default. Your chosen size persists across launches."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "Can markjason open files from iCloud or other cloud providers?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "Yes. markjason opens local files managed by iCloud and other macOS File Provider services, with retry behavior for files that still need to download. It does not provide its own cloud sync."
                 }
             },
             {
@@ -139,8 +155,8 @@
                 
                 <div class="faq-item">
                     <h3>What file types does markjason support?</h3>
-                    <p>markjason supports <code>.md</code> (Markdown), <code>.json</code> (JSON), and <code>.env</code> (environment variable) files. That's it — no other formats.</p>
-                    <p>This focus is intentional: do three things extremely well instead of everything poorly.</p>
+                    <p>markjason has dedicated experiences for <code>.md</code> (Markdown), <code>.json</code> (JSON), and <code>.env</code> files. It also opens valid UTF-8 text and source-code files, including files with uncommon extensions.</p>
+                    <p>Supported source formats receive syntax highlighting. Other valid text opens as plain text, while binary or invalid text is rejected safely. It stays a focused single-file editor, not an IDE.</p>
                 </div>
                 
                 <div class="faq-item">
@@ -177,6 +193,12 @@
                 <div class="faq-item">
                     <h3>Can markjason edit files or is it just a viewer?</h3>
                     <p>Both. Toggle between read and edit mode instantly with <kbd>⌘E</kbd>. Changes save automatically.</p>
+                </div>
+
+                <div class="faq-item">
+                    <h3>Can I change the editor font size?</h3>
+                    <p>Yes. In edit mode, use <kbd>⌘+</kbd> and <kbd>⌘−</kbd> to adjust text from 10pt to 24pt. <kbd>⌘0</kbd> resets it to the 14pt default.</p>
+                    <p>Your chosen size persists across launches.</p>
                 </div>
                 
                 <div class="faq-item">
@@ -218,7 +240,8 @@
                 
                 <div class="faq-item">
                     <h3>What about cloud sync?</h3>
-                    <p>No built-in sync. Your files live on your computer. Use git, iCloud, Dropbox, or whatever you prefer.</p>
+                    <p>No built-in sync. Your files stay in your chosen storage, such as iCloud, Dropbox, or another macOS File Provider.</p>
+                    <p>markjason can open those local cloud-managed files and retry when a file still needs to download. iCloud opening has been tested directly.</p>
                 </div>
             </section>
             
