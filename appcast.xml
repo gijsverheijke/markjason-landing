@@ -6,16 +6,16 @@
         <description>markjason updates</description>
         <language>en</language>
         <item>
-            <title>Version 0.34</title>
-            <sparkle:version>13</sparkle:version>
-            <sparkle:shortVersionString>0.34</sparkle:shortVersionString>
+            <title>Version 0.35</title>
+            <sparkle:version>14</sparkle:version>
+            <sparkle:shortVersionString>0.35</sparkle:shortVersionString>
             <sparkle:minimumSystemVersion>14.0</sparkle:minimumSystemVersion>
-            <pubDate>Wed, 13 May 2026 14:45:00 +0800</pubDate>
-            <description><![CDATA[<p><b>New:</b> Review external edits without blocking your flow. When a file changes on disk, markjason now loads the latest version immediately and keeps a subtle review notice.</p><p><b>Improved:</b> External file changes are treated as forward progress. You can inspect the diff, revert changes, or keep changes while editing and autosave continue normally.</p><p><b>Fixed:</b> The external-edit banner no longer flashes and disappears immediately after reload.</p><p>If the installer fails, please download the latest version manually from <a href="https://markjason.sh">markjason.sh</a></p>]]></description>
+            <pubDate>Wed, 22 Jul 2026 12:10:00 +0800</pubDate>
+            <description><![CDATA[<p><b>New:</b> Open UTF-8 text, JSON, and source-code files with Command-O, including files with uncommon extensions. Source files receive appropriate syntax highlighting.</p><p><b>New:</b> Adjust editor text size with Command-Plus, Command-Minus, and Command-0. Your preference persists between launches.</p><p><b>Improved:</b> More reliable opening and retry behavior for iCloud, pCloud, and other File Provider files, with safer file-type detection and clean rejection of invalid text.</p><p>If the installer fails, please download the latest version manually from <a href="https://markjason.sh">markjason.sh</a></p>]]></description>
             <enclosure 
-                url="https://github.com/gijsverheijke/markjason-landing/releases/download/0.34/markjason-0.34.dmg"
-                sparkle:edSignature="9WExrnFjX6bEkIjK2ugiyzTLBhoSISKqtCCna6sqJSY1Tw0z3oEOAeEJwBKkHFuMQeR2lti99plRBkwIQvGQAg=="
-                length="4750560"
+                url="https://github.com/gijsverheijke/markjason-landing/releases/download/0.35/markjason-0.35.dmg"
+                sparkle:edSignature="u5SkRw2SEGCNsS1bFteuGknHP1KnM+yJsoUsGoWrteXyykPqRIUSPzCeVGvnbqtGer652KX1fFSM3hDeCuwTAg=="
+                length="4788288"
                 type="application/octet-stream" />
         </item>
     </channel>
