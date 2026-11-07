@@ -171,11 +171,11 @@ Indicators in markjason are inspired by the Apollo Command Module. A warm, vinta
 
 ---
 
-## Why is this repo the landing page?
+## Source Code
 
-markjason itself is not open source. This repo hosts the landing page and the DMG releases. The setup is like this so the app can be completely free without any hosting costs (GitHub handles the downloads).
+markjason is open source. The source code is available in the [markjason repository](https://github.com/gijsverheijke/markjason) under the Apache 2.0 license.
 
-If you're interested in the source or want to contribute, feel free to open an issue or DM.
+This repo hosts the landing page and the DMG releases, so the app can stay completely free without any hosting costs (GitHub handles the downloads).
 
 ---
 
